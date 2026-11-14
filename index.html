@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark"><title>Engineering Team status</title><link rel="icon" href="data:,">
+<style>*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+:root{--bg:#FFF7F2;--surface:#FFFFFF;--surface2:#FFEDE5;--ink:#2A1B17;--onAccent:#2A1B17;--muted:#6A554E;--line:#EBD3C8;--accent:#FF9C86;--link:#B03A27;--bar:#C8442E;--track:#F6DDD3;--p1:#FFC3B5;--p2:#FFD9B3;--p3:#FFEFA8;--p4:#C9ECD6;--p5:#C6E2FB;--p6:#DCD3FA;--okF:#CDEBD3;--warnF:#FFE3A8;--badF:#FFC9C9;--infoF:#CFE3FF;--ok:#1E7A46;--warn:#9A6200;--bad:#B3261E;--r-sm:12px;--r-md:20px;--r-lg:28px;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#1E1513;--surface:#2A1F1C;--surface2:#362824;--ink:#FBEDE8;--onAccent:#2A1B17;--muted:#CDB6AE;--line:#4D3A34;--accent:#FF9C86;--link:#FFA794;--bar:#FF9C86;--track:#46342F;--p1:#5C3A33;--p2:#5A4330;--p3:#555026;--p4:#2F5140;--p5:#2F4A62;--p6:#47406A;--okF:#27503A;--warnF:#5A4720;--badF:#6A2F2F;--infoF:#2B4768;--ok:#6FD39A;--warn:#F2B552;--bad:#FF8A80;color-scheme:dark}}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.5 ui-rounded, "SF Pro Rounded", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3,p,ul,ol,dl,dd{margin:0;padding:0}ul,ol{list-style:none}a{color:var(--link);text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:3px solid var(--link);outline-offset:3px;border-radius:8px}
+.skip{position:absolute;left:12px;top:-60px;background:var(--surface);color:var(--ink);padding:12px 16px;border-radius:12px;z-index:9;border:2px solid var(--link)}.skip:focus{top:12px}
+small{font-size:14px;color:var(--muted);font-weight:400}.ic{flex:none}
+h1{font-size:28px;line-height:1.2;font-weight:700}h2{font-size:20px;line-height:1.2;font-weight:700;margin-bottom:16px}h3{font-size:16px;font-weight:600}
+.pill{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:8px 16px;border-radius:999px;font-weight:600;font-size:14px;background:var(--okF);color:var(--ink)}
+.pill.behind{background:var(--warnF)}.pill.stale{background:var(--badF)}.pill small{color:var(--ink);opacity:.85}
+.bar{height:12px;border-radius:999px;background:var(--track);overflow:hidden}.bar i{display:block;height:100%;background:var(--bar);border-radius:999px}.bar.sm{height:8px;margin-top:6px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}.chip{background:var(--surface2);border-radius:999px;padding:4px 12px;font-size:14px}
+.steps{display:flex;flex-direction:column;gap:12px;border-left:3px solid var(--line);margin-left:11px;padding-left:20px}
+.steps li{position:relative;display:flex;flex-wrap:wrap;gap:4px 8px;align-items:baseline}.steps small{flex-basis:100%}
+.steps .dot{position:absolute;left:-33px;top:2px;width:22px;height:22px;border-radius:50%;background:var(--surface);border:3px solid var(--bar);display:grid;place-items:center}.steps .dot .ic{width:12px;height:12px}
+.budget{display:grid;gap:12px}.budget dt{font-size:14px;color:var(--muted)}.budget dd{font-weight:600}
+.state{display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:600;padding:2px 12px 2px 8px;border-radius:999px;background:var(--surface2)}.state .ic{width:16px;height:16px}
+.state.work{background:var(--okF)}
+.person{display:flex;gap:12px;align-items:flex-start}.pbody{display:flex;flex-direction:column;gap:4px;align-items:flex-start;min-width:0}.pbody h3 small{margin-left:4px}.pbody p{font-weight:500;overflow-wrap:anywhere}
+.allclear{display:flex;gap:12px;align-items:center;background:var(--okF);border-radius:var(--r-md);padding:16px 20px}.allclear small{display:block;color:var(--ink)}
+.feed{display:flex;flex-direction:column;gap:16px}.feed li{display:flex;gap:12px}.feed p{margin-top:2px;overflow-wrap:anywhere}.mini{flex:none;width:28px;height:28px;display:grid;place-items:center;color:var(--link)}.mini .ic{width:22px;height:22px}
+.more{margin-top:16px;min-height:44px;display:flex;align-items:center}
+.banner,.nof,.empty,.skel{display:flex;gap:12px;align-items:flex-start;border-radius:var(--r-md);padding:16px;background:var(--surface2)}
+.banner small,.nof small,.empty small{display:block;color:var(--ink)}.banner.behind,.banner.warn{background:var(--warnF)}.banner.stale,.banner.failing{background:var(--badF)}.banner.ok{background:var(--okF)}
+.empty{flex-direction:column;align-items:center;text-align:center;padding:32px 16px}.empty small{color:var(--muted)}.nof{background:var(--surface);border:2px dashed var(--line)}.nof small{color:var(--muted)}
+.skel{flex-direction:column}.skel i{display:block;height:16px;width:100%;border-radius:8px;background:linear-gradient(90deg,var(--track),var(--surface),var(--track));background-size:200% 100%;animation:sh 1.6s linear infinite}.skel i:nth-child(2){width:70%}.skel i:nth-child(3){width:45%}
+@keyframes sh{to{background-position:-200% 0}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+.wrap{max-width:1120px;margin:0 auto;padding:16px 16px 48px}
+header{display:flex;flex-wrap:wrap;gap:12px 16px;align-items:center;justify-content:space-between;padding:16px 0}
+.brand{display:flex;gap:12px;align-items:center}.brand .logo{width:44px;height:44px;border-radius:16px;background:var(--accent);color:var(--onAccent);display:grid;place-items:center}.brand p{color:var(--muted);font-size:14px}
+nav.jump{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(10px);display:flex;gap:8px;overflow-x:auto;padding:8px 0;margin:0 -16px;padding-inline:16px;scrollbar-width:none}
+nav.jump a{flex:none;min-height:44px;display:inline-flex;align-items:center;gap:6px;padding:0 16px;border-radius:999px;background:var(--surface);border:1.5px solid var(--line);color:var(--ink);text-decoration:none;font-weight:600;font-size:14px}
+nav.jump a:first-child{background:var(--accent);color:var(--onAccent);border-color:transparent}
+.glance{display:grid;gap:12px;grid-template-columns:repeat(2,1fr);margin:16px 0 32px}
+.tile{border-radius:var(--r-lg);padding:20px;display:flex;flex-direction:column;gap:4px;min-height:132px}.tile .ic{width:26px;height:26px}.tile b{font-size:40px;line-height:1.1}.tile span{font-weight:600}.tile small{color:var(--ink);opacity:.9}
+.t1{background:var(--okF)}.t2{background:var(--p1)}.t3{background:var(--p5)}.t4{background:var(--p3)}
+section{margin-bottom:40px}
+.team{display:grid;gap:12px;grid-template-columns:1fr}
+.person{background:var(--surface);border-radius:var(--r-lg);padding:16px;border:1.5px solid var(--line)}.person.on{background:var(--surface);border-color:var(--bar);box-shadow:0 6px 20px rgba(200,68,46,.12)}
+.projects{display:grid;gap:16px;grid-template-columns:1fr}
+.proj{background:var(--surface);border-radius:var(--r-lg);padding:20px;border:1.5px solid var(--line);display:flex;flex-direction:column;gap:16px}
+.proj .top{display:flex;gap:16px;align-items:center}.proj .top h3{font-size:20px}.proj .top small{display:block}
+.nof-inline{background:var(--surface2);border-radius:var(--r-md);padding:12px 16px;display:flex;gap:8px}
+.two{display:grid;gap:24px;grid-template-columns:1fr}.card{background:var(--surface);border-radius:var(--r-lg);padding:20px;border:1.5px solid var(--line)}
+@media(min-width:760px){.glance{grid-template-columns:repeat(4,1fr)}.team{grid-template-columns:repeat(2,1fr)}.projects{grid-template-columns:repeat(2,1fr)}.two{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1040px){.team{grid-template-columns:repeat(3,1fr)}}
+
+.av{flex:none}
+html{scroll-padding-top:72px}
+.banners{display:flex;flex-direction:column;gap:8px}.banners:not(:empty){margin-bottom:8px}
+.banner.info{background:var(--infoF)}.banner .btn{margin-top:8px}
+.btn{font:inherit;font-weight:600;font-size:14px;min-height:44px;padding:0 20px;border-radius:999px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer;margin-top:16px}
+.of{font-size:20px}.glance{margin:12px 0 0}
+.asks{display:flex;flex-direction:column;gap:12px}.ask{display:flex;gap:12px;background:var(--warnF);border-radius:var(--r-md);padding:16px 20px}.ask p{margin-top:2px;overflow-wrap:anywhere}.ask small{color:var(--ink)}
+.stack{display:flex;flex-direction:column;gap:24px}.reqp h3 small{margin-left:4px}.sum{color:var(--muted);font-size:14px;margin:4px 0 16px}.quiet{color:var(--muted)}
+.budget>div{display:block}
+.empty b{font-size:20px}.empty .btn{margin-top:8px}
+.skel p,.skel span{width:100%}
+.tasks{display:flex;flex-direction:column;gap:6px;width:100%}.tasks li{display:flex;flex-direction:column;font-weight:500;overflow-wrap:anywhere}.tasks.cur li{font-weight:600}
+.lbl{font-size:14px;color:var(--muted);font-weight:600;margin-top:4px}.fin{font-size:14px;color:var(--muted);font-weight:400;margin-top:4px}.fin b{color:var(--ink)}
+.person details{width:100%}.person summary{min-height:44px;display:flex;align-items:center;cursor:pointer;color:var(--link);font-weight:600;font-size:14px}.person summary:focus-visible{outline:3px solid var(--link);outline-offset:3px;border-radius:8px}
+.links{display:flex;flex-wrap:wrap;gap:8px}.links a{min-height:44px;display:inline-flex;align-items:center;padding:0 16px;border-radius:999px;border:1.5px solid var(--line);background:var(--surface);font-weight:600;font-size:14px}
+</style></head><body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="wrap" id="top">
+<header><div class="brand"><span class="logo"><svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/></svg></span><div><h1>The team, right now</h1><p>Live from the Engineering Team</p></div></div><span class="pill" id="fresh" hidden></span></header>
+<div id="banners" class="banners"></div>
+<nav class="jump" aria-label="Sections" id="nav" hidden></nav>
+<main id="main" aria-busy="true"><div id="app"></div></main>
+</div>
+<script>
+'use strict';
+const FRESH_MIN = 20, STALE_MIN = 30; // Ben's idle heartbeat is every 9 min, so a healthy idle page is never flagged before 20 (assumption).
+const ROLE = { 'product-owner':'Product Owner','scrum-master':'Scrum Master','business-analyst':'Business Analyst','tech-lead':'Tech Lead','ux-designer':'UX Designer','database-engineer':'Database Engineer','frontend-developer':'Frontend Developer','backend-developer':'Backend Developer','deployment-engineer':'Deployment Engineer','qa-engineer':'QA Engineer','security-engineer':'Security Engineer','technical-recruiter':'Recruiter' };
+const HUE = { 'product-owner':1,'scrum-master':5,'business-analyst':3,'tech-lead':6,'ux-designer':2,'database-engineer':4,'frontend-developer':1,'backend-developer':5,'deployment-engineer':2,'qa-engineer':3,'security-engineer':6,'technical-recruiter':4 };
+const roleLabel = r => ROLE[r] || String(r || 'team').replace(/-/g, ' ').replace(/^./, c => c.toUpperCase());
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c]));
+const num = n => (Number.isFinite(Number(n)) ? Number(n) : 0).toLocaleString();
+const nf = n => { n = Number(n) || 0; return n >= 1e6 ? (n / 1e6).toFixed(n >= 1e7 ? 0 : 1).replace(/\.0$/, '') + 'M' : n >= 1e3 ? Math.round(n / 1e3) + 'k' : String(n); };
+const vd = iso => { const d = new Date(iso); return iso && !isNaN(d) ? d : null; };
+const clock = iso => { const d = vd(iso); return d ? d.toLocaleTimeString([], { hour:'2-digit', minute:'2-digit' }) : 'unknown time'; };
+const dayShort = d => d.toLocaleDateString([], { day:'numeric', month:'short' });
+const agoMin = m => m < 1 ? 'just now' : m < 60 ? `${Math.round(m)} min ago` : m < 1440 ? `${Math.floor(m / 60)} h ${Math.round(m % 60)} min ago` : `${Math.floor(m / 1440)} d ago`;
+const agoIso = iso => { const d = vd(iso); return d ? agoMin(Math.max(0, (Date.now() - d) / 60000)) : 'at an unknown time'; };
+const secClock = s => Number.isFinite(Number(s)) ? new Date(Number(s) * 1000).toLocaleString([], { weekday:'short', hour:'2-digit', minute:'2-digit' }) : 'later';
+const ic = d => `<svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">${d}</svg>`;
+const I = { check:ic('<path d="M5 12.5l4.5 4.5L19 7.5"/>'), clock:ic('<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>'), alert:ic('<path d="M12 4l9 16H3z"/><path d="M12 10v4M12 17.5v.1"/>'), bell:ic('<path d="M6 16V11a6 6 0 0112 0v5l1.5 2h-15z"/><path d="M10 21h4"/>'), people:ic('<circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0113 0"/><path d="M16 5a3.5 3.5 0 010 6.5M18 14a6.5 6.5 0 013.5 6"/>'), flag:ic('<path d="M5 21V4M5 4h11l-2 4 2 4H5"/>'), coin:ic('<circle cx="12" cy="12" r="9"/><path d="M14.5 9.5c-.5-1-1.5-1.5-2.5-1.5-1.5 0-2.5.8-2.5 2s1 1.8 2.5 2 2.5.8 2.5 2-1 2-2.5 2c-1 0-2-.5-2.5-1.5M12 6.5V8M12 16v1.5"/>'), list:ic('<path d="M8 6h12M8 12h12M8 18h12M4 6h.1M4 12h.1M4 18h.1"/>'), spark:ic('<path d="M12 3l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/>'), doc:ic('<path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M10 12h5M10 16h5"/>'), sync:ic('<path d="M20 11a8 8 0 00-14-4M4 5v3h3M4 13a8 8 0 0014 4M20 19v-3h-3"/>'), moon:ic('<path d="M20 14.5A8 8 0 019.5 4 8 8 0 1020 14.5z"/>'), pause:ic('<path d="M9 5v14M15 5v14"/>') };
+const ACC = {
+  'product-owner': '<path d="M26 22l4-9 6 6 4-8 4 8 6-6 4 9z" fill="#FFD36B" stroke="#2A2A2A" stroke-width="2" stroke-linejoin="round"/>',
+  'scrum-master': '<path d="M44 20V6" stroke="#2A2A2A" stroke-width="2.5" stroke-linecap="round"/><path d="M44 6l12 4-12 5z" fill="#FF8F7A" stroke="#2A2A2A" stroke-width="2" stroke-linejoin="round"/>',
+  'business-analyst': '<circle cx="35" cy="42" r="6.5" fill="none" stroke="#2A2A2A" stroke-width="2.5"/><circle cx="53" cy="42" r="6.5" fill="none" stroke="#2A2A2A" stroke-width="2.5"/><path d="M41.5 42h5" stroke="#2A2A2A" stroke-width="2.5"/>',
+  'tech-lead': '<path d="M44 4l3.2 6.6 7.2 1-5.2 5 1.3 7.2L44 20.400l-6.500 3.400 1.300-7.200-5.200-5 7.200-1z" fill="#FFD36B" stroke="#2A2A2A" stroke-width="2" stroke-linejoin="round" transform="translate(0 -1) scale(.9) translate(5 2)"/>',
+  'ux-designer': '<ellipse cx="40" cy="20" rx="20" ry="8" fill="#B79CF0" stroke="#2A2A2A" stroke-width="2"/><path d="M40 12v-5" stroke="#2A2A2A" stroke-width="3" stroke-linecap="round"/>',
+  'database-engineer': '<ellipse cx="44" cy="10" rx="11" ry="4" fill="#9ED3F0" stroke="#2A2A2A" stroke-width="2"/><path d="M33 10v8c0 2.200 5 4 11 4s11-1.800 11-4v-8" fill="#9ED3F0" stroke="#2A2A2A" stroke-width="2"/>',
+  'frontend-developer': '<path d="M20 44V38a24 24 0 0148 0v6" fill="none" stroke="#2A2A2A" stroke-width="3.5" stroke-linecap="round"/><rect x="15" y="38" width="9" height="16" rx="4.500" fill="#FF8F7A" stroke="#2A2A2A" stroke-width="2"/><rect x="64" y="38" width="9" height="16" rx="4.500" fill="#FF8F7A" stroke="#2A2A2A" stroke-width="2"/>',
+  'backend-developer': '<path d="M44 20V10" stroke="#2A2A2A" stroke-width="2.500" stroke-linecap="round"/><path d="M47 3l-8 9h6l-3 8 9-10h-6z" fill="#FFD36B" stroke="#2A2A2A" stroke-width="1.800" stroke-linejoin="round"/>',
+  'deployment-engineer': '<path d="M22 26a22 22 0 0144 0z" fill="#FFB14A" stroke="#2A2A2A" stroke-width="2.500" stroke-linejoin="round"/><rect x="18" y="25" width="52" height="6" rx="3" fill="#FFB14A" stroke="#2A2A2A" stroke-width="2.500"/>',
+  'qa-engineer': '<path d="M34 20l-6-10M54 20l6-10" stroke="#2A2A2A" stroke-width="2.500" stroke-linecap="round"/><circle cx="27" cy="9" r="3" fill="#8FD6A6" stroke="#2A2A2A" stroke-width="2"/><circle cx="61" cy="9" r="3" fill="#8FD6A6" stroke="#2A2A2A" stroke-width="2"/>',
+  'security-engineer': '<path d="M44 3l12 4v8c0 6-5 10-12 13-7-3-12-7-12-13V7z" fill="#9ED3F0" stroke="#2A2A2A" stroke-width="2" stroke-linejoin="round" transform="translate(0 -1) scale(.85) translate(8 3)"/>',
+  'technical-recruiter': '<path d="M30 14h26a5 5 0 015 5v6a5 5 0 01-5 5H44l-7 6v-6h-7a5 5 0 01-5-5v-6a5 5 0 015-5z" fill="#fff" stroke="#2A2A2A" stroke-width="2" stroke-linejoin="round" transform="translate(-4 -8) scale(.9)"/>',
+};
+function avatar(role, size) {
+  const bg = `var(--p${HUE[role] || 1})`, g = role === 'business-analyst';
+  return `<svg class="av" viewBox="0 0 88 88" width="${size}" height="${size}" aria-hidden="true" focusable="false"><circle cx="44" cy="46" r="34" fill="${bg}" stroke="rgba(42,42,42,.18)" stroke-width="1.5"/>${g ? '<circle cx="35" cy="42" r="2.6" fill="#2A2A2A"/><circle cx="53" cy="42" r="2.6" fill="#2A2A2A"/>' : '<ellipse cx="34" cy="43" rx="3.4" ry="4.2" fill="#2A2A2A"/><ellipse cx="54" cy="43" rx="3.4" ry="4.2" fill="#2A2A2A"/>'}<circle cx="27" cy="54" r="5" fill="#FF8F9F" opacity=".45"/><circle cx="61" cy="54" r="5" fill="#FF8F9F" opacity=".45"/><path d="M36 55q8 8 16 0" fill="none" stroke="#2A2A2A" stroke-width="3" stroke-linecap="round"/>${ACC[role] || ''}</svg>`;
+}
+
+let data = null, rawLast = '', refreshFailed = false, showAllActivity = false, lastLevel = null;
+const openReq = {};
+const arr = x => Array.isArray(x) ? x : [];
+const projects = () => arr(data && data.projects);
+const pName = id => (projects().find(p => p.id === id) || {}).name || id || '';
+const ageMin = () => { const d = vd(data && data.generatedAt); return d ? Math.max(0, (Date.now() - d) / 60000) : null; };
+const level = () => { const m = ageMin(); return m === null || m > STALE_MIN ? 'stale' : m > FRESH_MIN ? 'behind' : 'fresh'; };
+const pct = c => c.total ? Math.round(100 * c.done / c.total) : 0;
+const comp = p => { const c = p.completion || {}, t = arr(p.tasks); return { done: Number.isFinite(c.done) ? c.done : t.filter(x => x.status === 'Done').length, total: Number.isFinite(c.total) ? c.total : t.length }; };
+
+function person(a) {
+  const q = arr(a.queued);
+  return { cur: arr(a.current), q, queuedCount: Number.isFinite(a.queuedCount) ? a.queuedCount : q.length, finished: Number.isFinite(a.finished) ? a.finished : 0 };
+}
+function doing(a) {
+  const p = person(a), c = p.cur[0];
+  if (c) return { work: true, line: c.title, meta: `${pName(c.project)} · ${c.id} · ${vd(c.startedAt) ? 'started ' + agoIso(c.startedAt) : 'start time not recorded'}` };
+  if (p.queuedCount && p.q[0]) return { line: `Next up: ${p.q[0].title}`, meta: `${num(p.queuedCount)} waiting · ${pName(p.q[0].project)}` };
+  return { line: p.finished ? `${num(p.finished)} finished, nothing queued` : 'Free, nothing assigned', meta: '' };
+}
+const rank = a => { const p = person(a); return p.cur.length ? 0 : p.queuedCount > 0 ? 1 : p.finished > 0 ? 2 : 3; };
+
+function forecastText(f, finished) {
+  if (finished) return 'Finished';
+  const d = f && vd(f.finishAt);
+  if (d) {
+    const n = Number(f.basedOn), has = f.basedOn !== undefined && f.basedOn !== null && Number.isFinite(n);
+    return `Expected ${dayShort(d)} (estimate${has ? `, based on ${num(n)} finished ${n === 1 ? 'task' : 'tasks'}` : ''}, if done one at a time)`;
+  }
+  const r = String((f && f.reason) || 'not enough finished work to measure').replace(/^not enough data: /, 'Needs 3 finished tasks to estimate; ');
+  return `No date yet. ${r}`;
+}
+const ring = p => { const c = comp(p), r = 34, C = 2 * Math.PI * r, d = C * pct(c) / 100; return `<svg class="ring" viewBox="0 0 84 84" width="84" height="84" role="img" aria-label="${c.done} of ${c.total} tasks done"><circle cx="42" cy="42" r="${r}" fill="none" stroke="var(--track)" stroke-width="10"/><circle cx="42" cy="42" r="${r}" fill="none" stroke="var(--bar)" stroke-width="10" stroke-linecap="round" stroke-dasharray="${d.toFixed(1)} ${C.toFixed(1)}" transform="rotate(-90 42 42)"/><text x="42" y="48" text-anchor="middle" font-size="18" font-weight="700" fill="var(--ink)">${pct(c)}%</text></svg>`; };
+const bar = (v, max, label) => { const p = max ? Math.min(100, Math.round(100 * v / max)) : 0; return `<div class="bar sm" role="img" aria-label="${esc(label)}"><i style="width:${v > 0 ? Math.max(p, 2) : 0}%"></i></div>`; };
+
+const safeUrl = u => /^https:\/\//.test(String(u || '')) ? esc(u) : '';
+function links(p) {
+  const l = [['liveUrl', 'Live site'], ['stagingUrl', 'Staging site']].filter(([k]) => safeUrl(p[k])).map(([k, t]) => `<a href="${safeUrl(p[k])}" rel="noopener noreferrer" target="_blank">${t}<span class="sr"> (opens in a new tab)</span></a>`);
+  return l.length ? `<div class="links">${l.join('')}</div>` : '';
+}
+function projectCard(p) {
+  const c = comp(p), tasks = arr(p.tasks), ms = arr(p.milestones);
+  const counts = ['Backlog','Ready','In Progress','Review','QA','Done','Blocked'].map(s => [s, tasks.filter(t => t.status === s).length]).filter(([s, n]) => n || s === 'Done' || s === 'In Progress');
+  return `<article class="proj"><div class="top">${c.total ? ring(p) : ''}<div><h3>${esc(p.name)}</h3><small>${c.total ? `${num(c.done)} of ${num(c.total)} tasks done` : 'No tasks planned yet'}${p.phase ? ` · ${esc(p.phase)} phase` : ''}</small></div></div>
+  ${links(p)}
+  ${c.total && !p.private ? `<ul class="chips">${counts.map(([s, n]) => `<li class="chip"><b>${num(n)}</b> ${esc(s)}</li>`).join('')}</ul>` : ''}
+  ${ms.length ? `<ol class="steps" aria-label="Milestones of ${esc(p.name)}">${ms.map(m => { const fin = m.total > 0 && m.done >= m.total; return `<li><span class="dot" aria-hidden="true">${fin ? I.check : ''}</span><b>${esc(m.id)}</b> ${m.total ? `${num(m.done)} of ${num(m.total)}` : 'Not planned yet'}${m.total && (fin || vd(m.forecast && m.forecast.finishAt)) ? `<small>${esc(forecastText(m.forecast, fin))}</small>` : ''}</li>`; }).join('')}</ol>` : ''}
+  ${c.total && !p.private ? `<div class="nof-inline">${I.clock}<small>${esc(forecastText(p.forecast, c.done >= c.total))}</small></div>` : ''}</article>`;
+}
+function reqCard(p, i) {
+  const t = arr(p.trace), open = !!openReq[i];
+  const withCode = t.filter(r => r.code > 0).length, withTests = t.filter(r => r.tests > 0).length, live = t.filter(r => r.deployed).length, ver = t.filter(r => r.verified && !r.unverifiable).length;
+  const rows = (open ? t : t.slice(0, 4)).map(r => `<li><span class="mini">${I.doc}</span><div><b>${esc(r.id)}</b> <small>${num(r.code)} code · ${num(r.tests)} tests · ${r.deployed ? 'live' : 'not live yet'} · ${r.unverifiable ? 'needs owner to verify' : r.verified ? 'verified' : 'not verified yet'}</small><p>${esc(String(r.text || '').replace(/^\[[A-Z0-9_-]+\]\s*/, ''))}</p></div></li>`).join('');
+  return `<div class="reqp"><h3>${esc(p.name)} <small>${num(t.length)} requirements</small></h3><p class="sum">${num(withCode)} with code · ${num(withTests)} with tests · ${num(live)} live · ${num(ver)} verified</p><ul class="feed">${rows}</ul>${t.length > 4 ? `<button class="btn" id="req-${i}" data-req="${i}" aria-expanded="${open}">${open ? 'Show fewer' : `Show all ${num(t.length)}`}</button>` : ''}</div>`;
+}
+
+const taskLine = t => `<li><span>${esc(t.title)}</span><small>${esc(pName(t.project))} · ${esc(t.id)}${t.startedAt !== undefined ? ' · ' + (vd(t.startedAt) ? 'started ' + agoIso(t.startedAt) : 'start time not recorded') : ''}</small></li>`;
+function personCard(a) {
+  const p = person(a), work = p.cur.length > 0, rest = p.queuedCount - p.q.length;
+  const first = p.q.slice(0, 3), more = p.q.slice(3);
+  return `<li><article class="person ${work ? 'on' : ''}">${avatar(a.role, 60)}<div class="pbody"><h3>${esc(a.name)} <small>${esc(roleLabel(a.role))}</small></h3><span class="state ${work ? 'work' : 'idle'}">${work ? I.spark : I.moon}${work ? 'Working' : 'Idle'}</span>
+  ${work ? `<ul class="tasks cur" aria-label="Working on">${p.cur.map(taskLine).join('')}</ul>` : ''}
+  ${p.queuedCount ? `<p class="lbl">Queued: ${num(p.queuedCount)}</p><ul class="tasks" aria-label="Queued for ${esc(a.name)}">${first.map(t => taskLine({ ...t, startedAt: undefined })).join('')}</ul>${more.length || rest > 0 ? `<details><summary>${more.length ? `Show ${num(more.length)} more` : ''}${more.length && rest > 0 ? ', ' : ''}${rest > 0 ? `${more.length ? 'and ' : ''}${num(rest)} more not listed` : ''}</summary>${more.length ? `<ul class="tasks">${more.map(t => taskLine({ ...t, startedAt: undefined })).join('')}</ul>` : ''}</details>` : ''}` : ''}
+  ${!work && !p.queuedCount && !p.finished ? '<p>Free, nothing assigned</p>' : ''}
+  <p class="fin"><b>${num(p.finished)}</b> ${p.finished === 1 ? 'task' : 'tasks'} finished</p></div></article></li>`;
+}
+function render() {
+  const app = document.getElementById('app'), main = document.getElementById('main');
+  const focusId = document.activeElement && document.activeElement.id;
+  main.setAttribute('aria-busy', 'false');
+  const agents = arr(data.agents).slice().sort((a, b) => rank(a) - rank(b) || person(b).queuedCount - person(a).queuedCount);
+  const approvals = arr(data.pendingApprovals), working = agents.filter(a => person(a).cur.length), prj = projects();
+  const totDone = prj.reduce((n, p) => n + comp(p).done, 0), totAll = prj.reduce((n, p) => n + comp(p).total, 0);
+  const lv = level(), m = ageMin();
+  const activity = arr(data.activity).slice(0, showAllActivity ? 60 : 6);
+  const decisions = prj.flatMap(p => arr(p.decisions).map(d => ({ ...d, project: p.name }))).sort((a, b) => String(b.at).localeCompare(String(a.at))).slice(0, 3);
+  const L = data.limits || {};
+  const lim = (label, l) => l && Number.isFinite(Number(l.pct)) ? `<div><dt>${label}</dt><dd>${Math.round(l.pct)}% used <small>(resets ${esc(secClock(l.resetsAt))})</small></dd>${bar(l.pct, 100, `${label}: ${Math.round(l.pct)} percent used`)}</div>` : '';
+  const limHtml = lim('5-hour usage limit', L.fiveHour) + lim('Weekly usage limit', L.week);
+  const rec = Number(data.publish && data.publish.recoveredAfterFailures) || 0;
+  app.innerHTML = `
+<section id="now" aria-labelledby="h-now"><h2 class="sr" id="h-now">At a glance</h2>
+${approvals.length ? `<ul class="asks">${approvals.map(a => `<li class="ask">${I.bell}<div><b>${esc(a.kind)}</b> <small>on ${esc(pName(a.project))} · waiting ${esc(agoIso(a.since))}</small><p>${esc(a.text)}</p></div></li>`).join('')}</ul>` : `<div class="allclear">${I.check}<div><b>Nothing is waiting on you</b><small>The team will show a card here when it needs a yes or no.</small></div></div>`}
+<div class="glance">
+<div class="tile t1">${approvals.length ? I.bell : I.check}<b>${num(approvals.length)}</b><span>Waiting on you</span><small>${approvals.length ? 'Needs your answer' : 'All clear'}</small></div>
+<div class="tile t2">${I.spark}<b>${num(working.length)}<small class="of"> of ${num(agents.length)}</small></b><span>Working now</span><small>${working.length ? esc(working.slice(0, 4).map(a => a.name).join(', ')) : 'Nobody right now'}</small></div>
+<div class="tile t3">${I.flag}<b>${num(totDone)}<small class="of"> of ${num(totAll)}</small></b><span>Tasks done</span><small>${num(prj.length)} ${prj.length === 1 ? 'project' : 'projects'}</small></div>
+<div class="tile t4">${I.clock}<b>${m === null ? '?' : Math.round(m)}<small class="of"> min</small></b><span>Since last update</span><small>${lv === 'fresh' ? 'Fresh' : lv === 'behind' ? 'A little behind' : 'May be out of date'}${rec ? ` · recovered after ${num(rec)} failed ${rec === 1 ? 'push' : 'pushes'}` : ''}</small></div></div></section>
+<section id="team" aria-labelledby="h-team"><h2 id="h-team">Your team</h2>${agents.length ? `<ul class="team">${agents.map(personCard).join('')}</ul>` : `<div class="empty">${I.people}<b>No team members yet</b><small>People appear here when the team is set up.</small></div>`}</section>
+<section id="projects" aria-labelledby="h-proj"><h2 id="h-proj">Projects</h2>${prj.length ? `<div class="projects">${prj.map(projectCard).join('')}</div>` : `<div class="empty">${I.flag}<b>No projects yet</b><small>Projects appear here when the team starts one.</small></div>`}</section>
+<div class="two"><section id="feed" aria-labelledby="h-feed"><h2 id="h-feed">What just happened</h2><div class="card">${activity.length ? `<ul class="feed">${activity.map(e => `<li><span class="mini">${avatar(e.role, 28)}</span><div><b>${esc(roleLabel(e.role))}</b> <small>${e.project ? `on ${esc(pName(e.project))} · ` : ''}${esc(agoIso(e.at))}</small><p>${esc(e.text)}</p></div></li>`).join('')}</ul>${arr(data.activity).length > 6 ? `<button class="btn" id="act-more" aria-expanded="${showAllActivity}">${showAllActivity ? 'Show fewer' : 'Show more'}</button>` : ''}` : '<p class="quiet">Nothing has happened yet.</p>'}</div></section>
+<section aria-labelledby="h-dec"><h2 id="h-dec">Decisions</h2><div class="card">${decisions.length ? `<ul class="feed">${decisions.map(d => `<li><span class="mini">${I.flag}</span><div><b>${d.assumption ? 'Assumption' : 'Decision'}</b> <small>${esc(d.project)} · ${esc(agoIso(d.at))}</small><p>${esc(d.text)}</p></div></li>`).join('')}</ul>` : '<p class="quiet">No decisions logged yet.</p>'}</div></section></div>
+<div class="two"><section id="reqs" aria-labelledby="h-req"><h2 id="h-req">Requirements</h2><div class="card stack">${prj.some(p => arr(p.trace).length) ? prj.map((p, i) => arr(p.trace).length ? reqCard(p, i) : '').join('') : '<p class="quiet">Requirements will appear after intake.</p>'}</div></section>
+<section id="budget" aria-labelledby="h-bud"><h2 id="h-bud">Budget</h2><div class="card stack">${limHtml ? `<dl class="budget">${limHtml}</dl>` : ''}${prj.length ? prj.filter(p => !p.private).map(p => { const b = p.budget || {}; return `<div><h3>${esc(p.name)}</h3><dl class="budget"><div><dt>Tokens</dt><dd>${nf(b.used)}${b.tokens ? ` of ${nf(b.tokens)}` : ''}</dd>${bar(b.used, b.tokens, `${nf(b.used)} of ${nf(b.tokens)} tokens used`)}</div><div><dt>Hours</dt><dd>${num(b.hoursUsed)}${b.hours ? ` of ${num(b.hours)}` : ''}</dd>${bar(b.hoursUsed, b.hours, `${num(b.hoursUsed)} of ${num(b.hours)} hours used`)}</div></dl></div>`; }).join('') : '<p class="quiet">No projects yet.</p>'}</div></section></div>`;
+  document.getElementById('nav').hidden = false;
+  if (focusId) { const el = document.getElementById(focusId); if (el) el.focus({ preventScroll: true }); }
+}
+
+function banners() {
+  const out = [], lv = data ? level() : null, pub = data && data.publish, L = (data && data.limits) || {};
+  const B = (cls, role, icon, title, text, extra) => out.push(`<div class="banner ${cls}" role="${role}">${icon}<div><b>${esc(title)}</b><small>${text}</small>${extra || ''}</div></div>`);
+  if (data && data.stopped) B('warn', 'status', I.pause, 'The team is paused', 'No new work starts until the team is switched back on.');
+  if (L.coolOff) B('info', 'status', I.clock, 'Usage limit reached', `Work resumes ${esc(secClock(L.coolOff.resumeAt))}.${L.coolOff.reason ? ' ' + esc(L.coolOff.reason) : ''}`);
+  if (pub && pub.failing) B('failing', 'alert', I.sync, 'Publishing is failing', `${pub.consecutiveFailures ? `${num(pub.consecutiveFailures)} in a row. ` : ''}${pub.lastSuccessAt ? `Showing data from ${esc(clock(pub.lastSuccessAt))}. ` : ''}${pub.lastError && pub.lastError.message ? `Last error: ${esc(pub.lastError.message)}` : ''}`);
+  if (lv === 'stale') B('stale', 'alert', I.alert, 'Data may be out of date', `The team's PC may be off or publishing may be failing, so this may be out of date. Last update was at ${esc(clock(data.generatedAt))}.`);
+  else if (lv === 'behind') B('behind', 'status', I.clock, 'Data is a little behind', `Last update was at ${esc(clock(data.generatedAt))}. The team may be between updates.`);
+  if (refreshFailed && data) B('failing', 'alert', I.sync, 'Could not refresh', 'Showing the last data that loaded.', '<button class="btn" id="retry">Try again</button>');
+  const html = out.join(''), el = document.getElementById('banners');
+  if (el.dataset.k !== html) { const f = document.activeElement && document.activeElement.id; el.innerHTML = html; el.dataset.k = html; if (f === 'retry') { const r = document.getElementById('retry'); if (r) r.focus(); } }
+}
+function fresh() {
+  const el = document.getElementById('fresh');
+  if (!data) { el.hidden = true; return; }
+  const lv = level(), m = ageMin();
+  el.hidden = false; el.className = 'pill ' + lv;
+  el.innerHTML = `${lv === 'fresh' ? I.check : lv === 'behind' ? I.clock : I.alert}<span>${m === null ? 'Last update unknown' : `Updated ${esc(agoMin(m))}`} <small>${m === null ? '' : `(${esc(clock(data.generatedAt))})`}</small></span>`;
+}
+function status() {
+  banners(); fresh();
+  const lv = data ? level() : null;
+  if (data && lv !== lastLevel) { lastLevel = lv; render(); }
+  else { const t = document.querySelector('.t4 b'); if (t && data) { const m = ageMin(); t.firstChild.nodeValue = m === null ? '?' : String(Math.round(m)); } }
+}
+function showFatal() {
+  document.getElementById('main').setAttribute('aria-busy', 'false');
+  document.getElementById('app').innerHTML = `<div class="empty" role="alert">${I.sync}<b>No status published yet</b><small>The page could not load the team's status. This can be a short hiccup.</small><button class="btn" id="retry">Try again</button></div>`;
+}
+async function load() {
+  try {
+    const res = await fetch(`status.json?t=${Date.now()}`, { cache: 'no-store' });
+    if (!res.ok) throw new Error(String(res.status));
+    const txt = await res.text(), j = JSON.parse(txt);
+    if (!j || typeof j !== 'object' || Array.isArray(j)) throw new Error('bad');
+    refreshFailed = false;
+    const changed = txt !== rawLast || !data;
+    rawLast = txt; data = j;
+    if (changed) render();
+    status();
+  } catch (e) {
+    refreshFailed = true;
+    if (!data) showFatal(); else status();
+  }
+}
+document.addEventListener('click', e => {
+  const b = e.target.closest('button'); if (!b) return;
+  if (b.id === 'retry') load();
+  else if (b.id === 'act-more') { showAllActivity = !showAllActivity; render(); }
+  else if (b.dataset.req !== undefined) { openReq[b.dataset.req] = !openReq[b.dataset.req]; render(); }
+});
+document.getElementById('nav').innerHTML = [['now','bell','Now'],['team','people','Team'],['projects','flag','Projects'],['feed','list','Activity'],['reqs','doc','Requirements'],['budget','coin','Budget']].map(([h, i, t]) => `<a href="#${h}">${I[i]}${t}</a>`).join('');
+document.getElementById('app').innerHTML = '<div class="skel" role="status"><p><b>Loading the latest status.</b></p><span id="slow"></span><i></i><i></i><i></i></div><div class="skel"><i></i><i></i><i></i></div>';
+setTimeout(() => { const s = document.getElementById('slow'); if (!data && s) s.innerHTML = '<p>Taking longer than usual.</p>'; }, 10000);
+load();
+setInterval(load, 60000);
+setInterval(() => { if (data) status(); }, 30000);
+</script>
+</body></html>

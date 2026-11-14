@@ -1,0 +1,2715 @@
+{
+  "generatedAt": "2026-11-14T17:06:02.180Z",
+  "stopped": false,
+  "publish": {
+    "lastSuccessAt": "2026-11-14T16:56:02.147Z",
+    "failing": false,
+    "lastError": null,
+    "consecutiveFailures": 0,
+    "recoveredAfterFailures": 0
+  },
+  "limits": {
+    "fiveHour": null,
+    "week": null,
+    "coolOff": null
+  },
+  "agents": [
+    {
+      "role": "product-owner",
+      "name": "Priya",
+      "status": "on duty",
+      "project": null,
+      "task": null,
+      "tokens": 0,
+      "runs": 0,
+      "recruited": false,
+      "current": [],
+      "queued": [],
+      "queuedCount": 0,
+      "finished": 0
+    },
+    {
+      "role": "scrum-master",
+      "name": "Sam",
+      "status": "idle",
+      "project": null,
+      "task": null,
+      "tokens": 0,
+      "runs": 0,
+      "recruited": false,
+      "current": [],
+      "queued": [],
+      "queuedCount": 0,
+      "finished": 0
+    },
+    {
+      "role": "business-analyst",
+      "name": "Bea",
+      "status": "idle",
+      "project": null,
+      "task": null,
+      "tokens": 241153,
+      "runs": 3,
+      "recruited": false,
+      "current": [],
+      "queued": [],
+      "queuedCount": 0,
+      "finished": 1
+    },
+    {
+      "role": "tech-lead",
+      "name": "Theo",
+      "status": "idle",
+      "project": null,
+      "task": null,
+      "tokens": 3932063,
+      "runs": 16,
+      "recruited": false,
+      "current": [],
+      "queued": [],
+      "queuedCount": 0,
+      "finished": 11
+    },
+    {
+      "role": "ux-designer",
+      "name": "Uma",
+      "status": "idle",
+      "project": null,
+      "task": null,
+      "tokens": 533040,
+      "runs": 5,
+      "recruited": false,
+      "current": [],
+      "queued": [],
+      "queuedCount": 0,
+      "finished": 2
+    },
+    {
+      "role": "database-engineer",
+      "name": "Dara",
+      "status": "idle",
+      "project": null,
+      "task": null,
+      "tokens": 212423,
+      "runs": 2,
+      "recruited": false,
+      "current": [],
+      "queued": [],
+      "queuedCount": 0,
+      "finished": 2
+    },
+    {
+      "role": "frontend-developer",
+      "name": "Finn",
+      "status": "idle",
+      "project": null,
+      "task": null,
+      "tokens": 10918652,
+      "runs": 7,
+      "recruited": false,
+      "current": [],
+      "queued": [
+        {
+          "project": "urbanzyra",
+          "id": "T36",
+          "title": "Upgrade @react-native-firebase major version and re-test (audit highs)",
+          "status": "Backlog",
+          "startedAt": null,
+          "finishedAt": null
+        },
+        {
+          "project": "urbanzyra",
+          "id": "T46",
+          "title": "Follow-ups from T44 review: emulators-reverse rejects non-numeric DB port; make chat-firebase host/port assertion unconditional",
+          "status": "Backlog",
+          "startedAt": null,
+          "finishedAt": null
+        }
+      ],
+      "queuedCount": 2,
+      "finished": 5
+    },
+    {
+      "role": "backend-developer",
+      "name": "Ben",
+      "status": "idle",
+      "project": null,
+      "task": null,
+      "tokens": 5519445,
+      "runs": 9,
+      "recruited": false,
+      "current": [],
+      "queued": [],
+      "queuedCount": 0,
+      "finished": 7
+    },
+    {
+      "role": "deployment-engineer",
+      "name": "Dev",
+      "status": "idle",
+      "project": null,
+      "task": null,
+      "tokens": 224577,
+      "runs": 4,
+      "recruited": false,
+      "current": [],
+      "queued": [],
+      "queuedCount": 0,
+      "finished": 2
+    },
+    {
+      "role": "qa-engineer",
+      "name": "Quinn",
+      "status": "idle",
+      "project": null,
+      "task": null,
+      "tokens": 929407,
+      "runs": 12,
+      "recruited": false,
+      "current": [],
+      "queued": [
+        {
+          "project": "urbanzyra",
+          "id": "T42",
+          "title": "M2 device QA on Pixel 8 Pro: install app, sign-up and two-account chat against emulators",
+          "status": "Backlog",
+          "startedAt": "2026-11-04T05:06:24.588Z",
+          "finishedAt": null
+        }
+      ],
+      "queuedCount": 1,
+      "finished": 10
+    },
+    {
+      "role": "security-engineer",
+      "name": "Sasha",
+      "status": "idle",
+      "project": null,
+      "task": null,
+      "tokens": 647675,
+      "runs": 12,
+      "recruited": false,
+      "current": [],
+      "queued": [],
+      "queuedCount": 0,
+      "finished": 11
+    },
+    {
+      "role": "technical-recruiter",
+      "name": "Remy",
+      "status": "idle",
+      "project": null,
+      "task": null,
+      "tokens": 0,
+      "runs": 1,
+      "recruited": false,
+      "current": [],
+      "queued": [],
+      "queuedCount": 0,
+      "finished": 0
+    },
+    {
+      "role": "ceo",
+      "name": "CEO",
+      "status": "idle",
+      "project": null,
+      "task": null,
+      "tokens": 0,
+      "runs": 1,
+      "recruited": false,
+      "current": [],
+      "queued": [],
+      "queuedCount": 0,
+      "finished": 0
+    },
+    {
+      "role": "cfo",
+      "name": "CFO",
+      "status": "idle",
+      "project": null,
+      "task": null,
+      "tokens": 0,
+      "runs": 2,
+      "recruited": false,
+      "current": [],
+      "queued": [],
+      "queuedCount": 0,
+      "finished": 0
+    },
+    {
+      "role": "supervisor",
+      "name": "Supervisor",
+      "status": "idle",
+      "project": null,
+      "task": null,
+      "tokens": 0,
+      "runs": 0,
+      "recruited": false,
+      "current": [],
+      "queued": [],
+      "queuedCount": 0,
+      "finished": 0
+    },
+    {
+      "role": "janitor",
+      "name": "Janitor",
+      "status": "idle",
+      "project": null,
+      "task": null,
+      "tokens": 0,
+      "runs": 0,
+      "recruited": false,
+      "current": [],
+      "queued": [],
+      "queuedCount": 0,
+      "finished": 0
+    }
+  ],
+  "pendingApprovals": [],
+  "activity": [
+    {
+      "at": "2026-11-04T07:34:31.682Z",
+      "role": "product-owner",
+      "project": "urbanzyra",
+      "text": "Decision: PR #55 approved at f28ca92 (T44), security pass (T45). CI debug APK verified (app.urbanzyra.mobile.dev, arm64, debug-signed), expires 2026-11-06. T42 retest waits for the founder to reconnect the Pixel."
+    },
+    {
+      "at": "2026-11-04T07:34:31.452Z",
+      "role": "tech-lead",
+      "project": "urbanzyra",
+      "text": "T44 moved to Done"
+    },
+    {
+      "at": "2026-11-04T07:34:31.364Z",
+      "role": "frontend-developer",
+      "project": "urbanzyra",
+      "text": "T43 moved to Done"
+    },
+    {
+      "at": "2026-11-04T07:34:24.606Z",
+      "role": "tech-lead",
+      "project": "urbanzyra",
+      "text": "Finished T44 (86,307 tokens)"
+    },
+    {
+      "at": "2026-11-04T07:34:19.539Z",
+      "role": "tech-lead",
+      "project": "urbanzyra",
+      "text": "T44: re-reviewed the Android build PR and approved it. CI now keeps the debug APK. I downloaded and checked it: correct dev package, arm64, debug-signed. QA can install it on the phone using the README steps. Two small test and script tidy-ups are left as non-blocking follow-ups."
+    },
+    {
+      "at": "2026-11-04T07:32:57.885Z",
+      "role": "frontend-developer",
+      "project": "urbanzyra",
+      "text": "T43 moved to Review"
+    },
+    {
+      "at": "2026-11-04T07:32:49.435Z",
+      "role": "frontend-developer",
+      "project": "urbanzyra",
+      "text": "Finished T43 (229,319 tokens)"
+    },
+    {
+      "at": "2026-11-04T07:05:32.350Z",
+      "role": "product-owner",
+      "project": "urbanzyra",
+      "text": "Decision: T44 review: changes requested on PR #55. QA install route = debug APK from CI artifact (2-day retention, free tier), not local Windows build."
+    },
+    {
+      "at": "2026-11-04T07:05:32.268Z",
+      "role": "frontend-developer",
+      "project": "urbanzyra",
+      "text": "T43 moved to In Progress"
+    },
+    {
+      "at": "2026-11-04T07:05:20.879Z",
+      "role": "tech-lead",
+      "project": "urbanzyra",
+      "text": "Finished T44 (84,853 tokens)"
+    },
+    {
+      "at": "2026-11-04T07:05:16.378Z",
+      "role": "tech-lead",
+      "project": "urbanzyra",
+      "text": "T44: reviewed the Android build fix PR. Kotlin alignment, dev-only emulator config, bounded sign-up retry and the CI APK build are all sound. Changes requested: the CI build must upload the debug APK so QA can install it on a phone, plus one build workflow and updated install steps. Next: frontend m"
+    },
+    {
+      "at": "2026-11-04T07:04:17.039Z",
+      "role": "product-owner",
+      "project": "urbanzyra",
+      "text": "Decision: T45 security pass on PR #55 (2 low, 2 info). Existing grpc/firestore audit highs predate it and stay with T36 (Firebase major upgrade, founder decision at checkpoint)."
+    },
+    {
+      "at": "2026-11-04T07:04:16.955Z",
+      "role": "security-engineer",
+      "project": "urbanzyra",
+      "text": "T45 moved to Done"
+    },
+    {
+      "at": "2026-11-04T07:04:11.386Z",
+      "role": "security-engineer",
+      "project": "urbanzyra",
+      "text": "Finished T45 (36,067 tokens)"
+    },
+    {
+      "at": "2026-11-04T07:02:19.373Z",
+      "role": "security-engineer",
+      "project": "urbanzyra",
+      "text": "T45 moved to In Progress"
+    },
+    {
+      "at": "2026-11-04T07:02:19.292Z",
+      "role": "tech-lead",
+      "project": "urbanzyra",
+      "text": "T44 moved to In Progress"
+    },
+    {
+      "at": "2026-11-04T07:02:19.209Z",
+      "role": "frontend-developer",
+      "project": "urbanzyra",
+      "text": "T43 moved to Review"
+    },
+    {
+      "at": "2026-11-04T07:01:44.134Z",
+      "role": "frontend-developer",
+      "project": "urbanzyra",
+      "text": "Finished T43 (202,372 tokens)"
+    },
+    {
+      "at": "2026-11-04T07:01:38.386Z",
+      "role": "frontend",
+      "project": "urbanzyra",
+      "text": "T43 PR #55 (base task/t22, stack of #38+#39): Kotlin 2.4, configurable dev emulator host, NOT_FOUND retry, Android build CI; all checks green. Next: founder reruns phone test with adb reverse."
+    },
+    {
+      "at": "2026-11-04T06:01:31.630Z",
+      "role": "frontend-developer",
+      "project": "urbanzyra",
+      "text": "T43 moved to In Progress"
+    },
+    {
+      "at": "2026-11-04T06:01:24.666Z",
+      "role": "product-owner",
+      "project": "urbanzyra",
+      "text": "Decision: T42 device QA incomplete: launch, coral design and invalid-phone check pass on the Pixel 8 Pro. Blocked by: debug APK fails to compile (Kotlin metadata), emulator host hard-coded to 10.0.2.2 so OTP fails from a real phone, and the phone disconnected. Image send is M3 scope (plan), not an M"
+    },
+    {
+      "at": "2026-11-04T06:01:24.111Z",
+      "role": "qa-engineer",
+      "project": "urbanzyra",
+      "text": "T42 moved to Backlog"
+    },
+    {
+      "at": "2026-11-04T06:00:42.426Z",
+      "role": "qa",
+      "project": "urbanzyra",
+      "text": "T42 device QA incomplete: launch and coral design verified on Pixel 8 Pro; OTP from device blocked by emulator host remap (10.0.2.2) and native build needs a Kotlin workaround; phone then disconnected. Details in evidence/T42/result.md."
+    },
+    {
+      "at": "2026-11-04T05:09:50.178Z",
+      "role": "product-owner",
+      "project": "urbanzyra",
+      "text": "Decision: T30 BA walkthrough done (evidence/T30/walkthrough.md). Gaps for checkpoint: PRs #32-#39 unmerged; no in-app way to start a new chat (New chat picker deferred to M4, so M2 chat runs on seeded conversations); data export not downloadable in-app (R11); R12 phone change absent. Device items aw"
+    },
+    {
+      "at": "2026-11-04T05:09:50.101Z",
+      "role": "business-analyst",
+      "project": "urbanzyra",
+      "text": "T30 moved to Done"
+    },
+    {
+      "at": "2026-11-04T05:09:42.081Z",
+      "role": "business-analyst",
+      "project": "urbanzyra",
+      "text": "Finished T30 (101,637 tokens)"
+    },
+    {
+      "at": "2026-11-04T05:09:36.054Z",
+      "role": "business-analyst",
+      "project": "urbanzyra",
+      "text": "T30 BA walkthrough of M0-M2 written (evidence/T30/walkthrough.md). Key findings: M1/M2 PRs are unmerged; no UI path to start a chat; five-tab deviation is founder-approved; device items await T42. Nothing marked verified."
+    },
+    {
+      "at": "2026-11-04T05:06:24.665Z",
+      "role": "business-analyst",
+      "project": "urbanzyra",
+      "text": "T30 moved to In Progress"
+    },
+    {
+      "at": "2026-11-04T05:06:24.590Z",
+      "role": "qa-engineer",
+      "project": "urbanzyra",
+      "text": "T42 moved to In Progress"
+    },
+    {
+      "at": "2026-11-04T05:06:08.342Z",
+      "role": "product-owner",
+      "project": "urbanzyra",
+      "text": "Decision: Founder extended time window +10h (2026-11-04) for M2 checkpoint and possible T36. Founder rule for Pixel 41130DLJG00135: install the Urbanzyra app and test it only; no other action on the phone (no settings changes, no other apps, no file access outside the app, no uninstalling other apps"
+    },
+    {
+      "at": "2026-11-03T21:49:35.272Z",
+      "role": "frontend-developer",
+      "project": "urbanzyra",
+      "text": "T26 moved to Done"
+    },
+    {
+      "at": "2026-11-03T21:49:28.451Z",
+      "role": "frontend-developer",
+      "project": "status-page-setup",
+      "text": "Finished a job (309,432 tokens)"
+    },
+    {
+      "at": "2026-11-03T21:49:22.826Z",
+      "role": "frontend-developer",
+      "project": "urbanzyra",
+      "text": "T26 PR #39: chat-<uid>.db is wiped on sign-out, account deletion and account switch; markRead debounced 1.5 s; markDelivered sent one per second newest first with 60 s back-off on RATE_LIMITED. 285 tests pass, CI green."
+    },
+    {
+      "at": "2026-11-03T21:41:54.497Z",
+      "role": "product-owner",
+      "project": "urbanzyra",
+      "text": "Decision: PO: wipe the local chat cache on sign-out and account deletion; debounce markRead; batch markDelivered. Open founder decision for the checkpoint: encrypt the on-device chat cache."
+    },
+    {
+      "at": "2026-11-03T21:41:54.337Z",
+      "role": "security-engineer",
+      "project": "urbanzyra",
+      "text": "T29 moved to Done"
+    },
+    {
+      "at": "2026-11-03T21:41:54.180Z",
+      "role": "qa-engineer",
+      "project": "urbanzyra",
+      "text": "T28 moved to Done"
+    },
+    {
+      "at": "2026-11-03T21:41:54.017Z",
+      "role": "frontend-developer",
+      "project": "urbanzyra",
+      "text": "T26 moved to In Progress"
+    },
+    {
+      "at": "2026-11-03T21:41:45.449Z",
+      "role": "qa-engineer",
+      "project": "urbanzyra",
+      "text": "Finished T28 (61,662 tokens)"
+    },
+    {
+      "at": "2026-11-03T21:18:11.749Z",
+      "role": "security-engineer",
+      "project": "urbanzyra",
+      "text": "Finished T29 (33,611 tokens)"
+    },
+    {
+      "at": "2026-11-03T21:16:52.494Z",
+      "role": "security-engineer",
+      "project": "urbanzyra",
+      "text": "T29 moved to In Progress"
+    },
+    {
+      "at": "2026-11-03T21:16:42.636Z",
+      "role": "product-owner",
+      "project": "urbanzyra",
+      "text": "Decision: Client must batch markRead by upToMessageId to stay under 120 per minute in busy groups; QA T28 to check."
+    },
+    {
+      "at": "2026-11-03T21:16:42.475Z",
+      "role": "backend-developer",
+      "project": "urbanzyra",
+      "text": "T41 moved to Done"
+    },
+    {
+      "at": "2026-11-03T21:16:37.253Z",
+      "role": "security-engineer",
+      "project": "status-page-setup",
+      "text": "Finished a job (36,348 tokens)"
+    },
+    {
+      "at": "2026-11-03T21:16:01.818Z",
+      "role": "backend-developer",
+      "project": "urbanzyra",
+      "text": "T41 moved to Review"
+    },
+    {
+      "at": "2026-11-03T21:15:55.611Z",
+      "role": "backend-developer",
+      "project": "urbanzyra",
+      "text": "Finished T41 (286,296 tokens)"
+    },
+    {
+      "at": "2026-11-03T21:14:07.564Z",
+      "role": "qa-engineer",
+      "project": "urbanzyra",
+      "text": "T28 moved to In Progress"
+    },
+    {
+      "at": "2026-11-03T21:14:07.448Z",
+      "role": "product-owner",
+      "project": "urbanzyra",
+      "text": "Decision: Accepted for M2: a deleted failed message may briefly reach the recipient before removal if a slow attempt lands. M4 follow-up: hide Delete on a failed bubble while an attempt is in flight."
+    },
+    {
+      "at": "2026-11-03T21:14:07.313Z",
+      "role": "tech-lead",
+      "project": "urbanzyra",
+      "text": "T27 moved to Done"
+    },
+    {
+      "at": "2026-11-03T21:13:57.895Z",
+      "role": "tech-lead",
+      "project": "urbanzyra",
+      "text": "Finished T27 (108,165 tokens)"
+    },
+    {
+      "at": "2026-11-03T21:13:52.051Z",
+      "role": "tech-lead",
+      "project": "urbanzyra",
+      "text": "Re-reviewed the chat list and conversation PR: approved. Sends are now transactional, so nothing stays queued, and the engine no longer starts listening after it is shut down. CI is green. Follow-up suggested: hide Delete on a failed message while an attempt is still in flight."
+    },
+    {
+      "at": "2026-11-03T21:13:02.446Z",
+      "role": "product-owner",
+      "project": "urbanzyra",
+      "text": "Decision: Chat UI fixes at b3f442e: transactional send, start-dispose guard, CI hang fixed. Non-blocking follow-ups for M4: time to failed, markDelivered on each launch, readReceipts listener re-subscribe, SQLite close on account switch."
+    },
+    {
+      "at": "2026-11-03T21:13:02.315Z",
+      "role": "tech-lead",
+      "project": "urbanzyra",
+      "text": "T27 moved to In Progress"
+    },
+    {
+      "at": "2026-11-03T21:13:02.170Z",
+      "role": "frontend-developer",
+      "project": "urbanzyra",
+      "text": "T26 moved to Review"
+    },
+    {
+      "at": "2026-11-03T21:11:33.737Z",
+      "role": "frontend-developer",
+      "project": "status-page-setup",
+      "text": "Finished a job (295,124 tokens)"
+    },
+    {
+      "at": "2026-11-03T21:11:22.850Z",
+      "role": "frontend-developer",
+      "project": "urbanzyra",
+      "text": "T26 PR #39 updated for T27 review: sends use a transaction (deleted failed messages cannot arrive later, in-flight stragglers are deleted for everyone), no listeners attach after dispose, CI hang fixed (tests restored real timers; fake timers hung Testing Library cleanup on CI). Checks and rules gre"
+    },
+    {
+      "at": "2026-11-03T21:00:33.807Z",
+      "role": "backend-developer",
+      "project": "urbanzyra",
+      "text": "T41 moved to In Progress"
+    },
+    {
+      "at": "2026-11-03T21:00:27.321Z",
+      "role": "product-owner",
+      "project": "urbanzyra",
+      "text": "Decision: Receipts are behavioural personal data: exportMyData must include the user's own receipts; per-user rate limit on markDelivered and markRead; off-toggle race hardening. Small follow-up task before checkpoint."
+    },
+    {
+      "at": "2026-11-03T21:00:27.170Z",
+      "role": "backend-developer",
+      "project": "urbanzyra",
+      "text": "T37 moved to Done"
+    },
+    {
+      "at": "2026-11-03T21:00:27.030Z",
+      "role": "security-engineer",
+      "project": "urbanzyra",
+      "text": "T40 moved to Done"
+    },
+    {
+      "at": "2026-11-03T21:00:21.343Z",
+      "role": "security-engineer",
+      "project": "urbanzyra",
+      "text": "Finished T40 (34,759 tokens)"
+    }
+  ],
+  "projects": [
+    {
+      "completion": {
+        "done": 8,
+        "total": 8
+      },
+      "forecast": {
+        "finishAt": null,
+        "reason": "nothing left to do",
+        "basedOn": 8
+      },
+      "milestones": [
+        {
+          "id": "M1",
+          "done": 8,
+          "total": 8,
+          "forecast": {
+            "finishAt": null,
+            "reason": "nothing left to do",
+            "basedOn": 8
+          }
+        }
+      ],
+      "id": "status-page-setup",
+      "name": "Status page setup",
+      "client": "",
+      "phase": "build",
+      "gate": "approved",
+      "liveUrl": null,
+      "stagingUrl": null,
+      "budget": {
+        "tokens": 4500000,
+        "used": 10256832,
+        "hours": 10,
+        "hoursUsed": 285.5,
+        "byRole": {
+          "business-analyst": 139516,
+          "tech-lead": 1038165,
+          "deployment-engineer": 165605,
+          "backend-developer": 4128198,
+          "frontend-developer": 4088770,
+          "ux-designer": 105604,
+          "qa-engineer": 305555,
+          "security-engineer": 248329,
+          "database-engineer": 37090
+        }
+      },
+      "tasks": [
+        {
+          "id": "T1",
+          "title": "Status data: per-person current, queued and finished tasks; task start and finish times; measured forecast; fix publish EPERM",
+          "role": "backend-developer",
+          "status": "Done",
+          "milestone": "M1",
+          "tokens": 770497,
+          "startedAt": "2026-11-02T19:51:33.949Z",
+          "finishedAt": "2026-11-02T21:18:31.640Z"
+        },
+        {
+          "id": "T2",
+          "title": "Status page: team view, timeline and completion view, stale warning, mobile",
+          "role": "frontend-developer",
+          "status": "Done",
+          "milestone": "M1",
+          "tokens": 921298,
+          "startedAt": "2026-11-02T19:41:38.790Z",
+          "finishedAt": "2026-11-02T21:18:31.878Z"
+        },
+        {
+          "id": "T3",
+          "title": "Review: status page upgrade",
+          "role": "tech-lead",
+          "status": "Done",
+          "milestone": "M1",
+          "tokens": 853219,
+          "startedAt": "2026-11-02T19:46:44.146Z",
+          "finishedAt": "2026-11-02T20:20:43.673Z"
+        },
+        {
+          "id": "T4",
+          "title": "QA: status page upgrade",
+          "role": "qa-engineer",
+          "status": "Done",
+          "milestone": "M1",
+          "tokens": 305555,
+          "startedAt": "2026-11-02T20:20:44.025Z",
+          "finishedAt": "2026-11-02T21:18:32.024Z"
+        },
+        {
+          "id": "T5",
+          "title": "Security scan: status page upgrade",
+          "role": "security-engineer",
+          "status": "Done",
+          "milestone": "M1",
+          "tokens": 67708,
+          "startedAt": "2026-11-02T20:20:44.174Z",
+          "finishedAt": "2026-11-02T21:05:17.771Z"
+        },
+        {
+          "id": "T6",
+          "title": "Design status page: pastel, light directions for founder approval",
+          "role": "ux-designer",
+          "status": "Done",
+          "milestone": "M1",
+          "tokens": 105604,
+          "startedAt": "2026-11-02T19:52:43.201Z",
+          "finishedAt": "2026-11-02T20:03:12.359Z"
+        },
+        {
+          "id": "T7",
+          "title": "Public page: projects marked private show progress only",
+          "role": "backend-developer",
+          "status": "Done",
+          "milestone": "M1",
+          "tokens": 48652,
+          "startedAt": "2026-11-03T06:56:44.496Z",
+          "finishedAt": "2026-11-03T07:11:11.383Z"
+        },
+        {
+          "id": "T8",
+          "title": "Always-on localhost status page: login-start server, 1-minute local refresh",
+          "role": "deployment-engineer",
+          "status": "Done",
+          "milestone": "M1",
+          "tokens": 115976,
+          "startedAt": "2026-11-03T10:21:48.172Z",
+          "finishedAt": "2026-11-03T10:27:09.210Z"
+        }
+      ],
+      "trace": [],
+      "decisions": [
+        {
+          "at": "2026-11-03T10:23:38.969Z",
+          "text": "Local page at 127.0.0.1:47650 loads and the login task is installed, but status.json returned an empty object at 10:23Z. Sent back to Dev.",
+          "assumption": false
+        },
+        {
+          "at": "2026-11-03T10:21:06.962Z",
+          "text": "User approved always-on localhost status page: local server started at Windows login via Task Scheduler, local data refresh every minute. Build after 3:40 pm IST reset.",
+          "assumption": false
+        },
+        {
+          "at": "2026-11-03T06:56:44.215Z",
+          "text": "User chose: hide Fundraising details on the public page; show only progress, no decisions, tasks, requirements or text.",
+          "assumption": false
+        },
+        {
+          "at": "2026-11-02T21:37:29.847Z",
+          "text": "Status page overran its 3M budget unnoticed by PO. User set budget to 4.5M; L1-L3 and M2 follow-ups wait for user's request.",
+          "assumption": false
+        },
+        {
+          "at": "2026-11-02T21:18:32.136Z",
+          "text": "QA passed. New page replaced live template, as founder approved. Old dark page kept in docs/design/previous. Follow-ups: Sasha's L1-L3, and high-entropy secret rule (M2).",
+          "assumption": false
+        },
+        {
+          "at": "2026-11-02T21:16:59.011Z",
+          "text": "Sasha's F1-F3 fixed: exemption is a closed list of 2 words, compound key names match, alert dedupe uses salted hash. finishedRecent removed. QA reruns.",
+          "assumption": false
+        },
+        {
+          "at": "2026-11-02T21:15:02.847Z",
+          "text": "Theo approved fingerprint and team view. PO removes finishedRecent from public data, since the page doesn't use it.",
+          "assumption": false
+        },
+        {
+          "at": "2026-11-02T21:13:08.855Z",
+          "text": "Ben confirmed by shape that the two blocked lines are prose and narrowed the rule to one shape only. Theo and Sasha review after the fact, since the rule is already live on the tick. T4 QA reruns after that.",
+          "assumption": false
+        },
+        {
+          "at": "2026-11-02T21:10:18.012Z",
+          "text": "QA failed: publish blocked since 20:16 UTC by password-assignment pattern on real data; team view hides extra tasks; forecast changes defeat no-change skip. Blocker: a human or Sasha confirms the matches aren't secrets before narrowing the rule; narrowing gets Theo's and Sasha's review.",
+          "assumption": false
+        },
+        {
+          "at": "2026-11-02T20:20:43.885Z",
+          "text": "Theo approved T1 and T2. Follow-up: normal sentences like 'token: refresh flow' can block publishing; the block raises an alert email. Remove the no-op assert with any QA fixes.",
+          "assumption": false
+        },
+        {
+          "at": "2026-11-02T20:16:02.198Z",
+          "text": "Theo found email scrub defeats the secret scan on live publish. Urgent fix sent to Ben. Finn restores verified status and Live/Staging links, which the founder never asked to drop.",
+          "assumption": false
+        },
+        {
+          "at": "2026-11-02T20:11:12.627Z",
+          "text": "User approved built draft with tidy-up: 'No date yet' once per project. User added 1M tokens. Draft replaces live template after review, QA and security pass.",
+          "assumption": false
+        },
+        {
+          "at": "2026-11-02T20:09:21.677Z",
+          "text": "Freshness thresholds in the built page: fresh <=20 min, behind 20-30, stale >30 (design said 10/30), because Ben's idle heartbeat is every 9 min and a healthy idle page must never warn.",
+          "assumption": true
+        },
+        {
+          "at": "2026-11-02T20:03:12.522Z",
+          "text": "User chose direction A, Soft Cards. Built as a draft outside plugin/ first, since the template auto-publishes. It replaces the live template only after the user approves the built result.",
+          "assumption": false
+        },
+        {
+          "at": "2026-11-02T19:54:30.982Z",
+          "text": "T3 re-review covers publish fixes now, since they run live. Page visuals get reviewed after the approved design. Scrub gap for paths with spaces stays a follow-up unless Theo says otherwise.",
+          "assumption": false
+        },
+        {
+          "at": "2026-11-02T19:52:43.353Z",
+          "text": "Standing rule from user: anything user-visible gets user-approved UX before development. The guard blocked saving this to Claude memory, so it is logged here; also propose adding it to the PO skill with the founder's approval.",
+          "assumption": false
+        },
+        {
+          "at": "2026-11-02T19:52:30.338Z",
+          "text": "User feedback: page looks bad, all dark, no pastel; UX should have come first; correct delivery over speed. PO error: skipped UX. Frontend stopped until user approves a design. Ben's non-visual publish fixes continue.",
+          "assumption": false
+        },
+        {
+          "at": "2026-11-02T19:51:33.840Z",
+          "text": "PO: accept all review changes C1-C5. D1: pushSite refuses any repo whose name doesn't end in -status. Guard rules are not changed without founder approval. Forecast wording notes accepted for Finn.",
+          "assumption": false
+        },
+        {
+          "at": "2026-11-02T19:41:39.140Z",
+          "text": "T2 starts while T1 awaits review, since it builds on T1's data. T1 closes only after review and QA, which cover both.",
+          "assumption": false
+        },
+        {
+          "at": "2026-11-02T19:40:39.954Z",
+          "text": "User allowed Ben to edit [path] published-fields check gets task start and finish times, plus new tests. Tech Lead reviews the safety check change.",
+          "assumption": false
+        },
+        {
+          "at": "2026-11-02T19:36:15.961Z",
+          "text": "User: keep status page fully public, leave it up, build upgrade alongside Urbanzyra with 2M tokens. Hours were not asked; 10 set by Priya.",
+          "assumption": false
+        }
+      ]
+    },
+    {
+      "completion": {
+        "done": 43,
+        "total": 46
+      },
+      "forecast": {
+        "finishAt": "2026-11-14T18:25:16.001Z",
+        "reason": null,
+        "basedOn": 42,
+        "medianMinutes": 26,
+        "method": "sequential"
+      },
+      "milestones": [
+        {
+          "id": "M0",
+          "done": 5,
+          "total": 5,
+          "forecast": {
+            "finishAt": null,
+            "reason": "nothing left to do",
+            "basedOn": 42
+          }
+        },
+        {
+          "id": "M1",
+          "done": 17,
+          "total": 17,
+          "forecast": {
+            "finishAt": null,
+            "reason": "nothing left to do",
+            "basedOn": 42
+          }
+        },
+        {
+          "id": "M2",
+          "done": 21,
+          "total": 24,
+          "forecast": {
+            "finishAt": "2026-11-14T18:25:16.001Z",
+            "reason": null,
+            "basedOn": 42,
+            "medianMinutes": 26,
+            "method": "sequential"
+          }
+        }
+      ],
+      "id": "urbanzyra",
+      "name": "Urbanzyra",
+      "client": "",
+      "phase": "build",
+      "gate": "approved",
+      "liveUrl": null,
+      "stagingUrl": null,
+      "budget": {
+        "tokens": 20000000,
+        "used": 12901603,
+        "hours": 50,
+        "hoursUsed": 292.1,
+        "byRole": {
+          "ux-designer": 427436,
+          "frontend-developer": 6829882,
+          "tech-lead": 2893898,
+          "security-engineer": 399346,
+          "qa-engineer": 623852,
+          "database-engineer": 175333,
+          "backend-developer": 1391247,
+          "deployment-engineer": 58972,
+          "business-analyst": 101637
+        }
+      },
+      "tasks": [
+        {
+          "id": "T1",
+          "title": "Design system and screens: onboarding, tabs, chat list, conversation; light and dark",
+          "role": "ux-designer",
+          "status": "Done",
+          "milestone": "M0",
+          "tokens": 427436,
+          "startedAt": null,
+          "finishedAt": null
+        },
+        {
+          "id": "T2",
+          "title": "Scaffold Expo app: tabs, theme, en.json, Android dev build, sample vertical video feed",
+          "role": "frontend-developer",
+          "status": "Done",
+          "milestone": "M0",
+          "tokens": 5537919,
+          "startedAt": "2026-11-02T21:19:18.719Z",
+          "finishedAt": "2026-11-03T06:41:17.923Z"
+        },
+        {
+          "id": "T3",
+          "title": "Review: Scaffold Expo app: tabs, theme, en.json, Android dev build, sample vertical video feed",
+          "role": "tech-lead",
+          "status": "Done",
+          "milestone": "M0",
+          "tokens": 1521722,
+          "startedAt": "2026-11-02T21:07:55.335Z",
+          "finishedAt": "2026-11-03T06:02:26.499Z"
+        },
+        {
+          "id": "T4",
+          "title": "QA: Scaffold Expo app: tabs, theme, en.json, Android dev build, sample vertical video feed",
+          "role": "qa-engineer",
+          "status": "Done",
+          "milestone": "M0",
+          "tokens": 192961,
+          "startedAt": "2026-11-03T06:02:26.657Z",
+          "finishedAt": "2026-11-03T06:41:01.030Z"
+        },
+        {
+          "id": "T5",
+          "title": "Security scan: Scaffold Expo app: tabs, theme, en.json, Android dev build, sample vertical video feed",
+          "role": "security-engineer",
+          "status": "Done",
+          "milestone": "M0",
+          "tokens": 28474,
+          "startedAt": "2026-11-03T06:03:08.900Z",
+          "finishedAt": "2026-11-03T06:07:16.831Z"
+        },
+        {
+          "id": "T6",
+          "title": "Emulator setup, users data model, security rules and rules tests",
+          "role": "database-engineer",
+          "status": "Done",
+          "milestone": "M1",
+          "tokens": 101994,
+          "startedAt": "2026-11-03T10:24:00.002Z",
+          "finishedAt": "2026-11-03T10:58:56.530Z"
+        },
+        {
+          "id": "T7",
+          "title": "Review: Emulator setup, users data model, security rules and rules tests",
+          "role": "tech-lead",
+          "status": "Done",
+          "milestone": "M1",
+          "tokens": 133779,
+          "startedAt": "2026-11-03T10:44:09.551Z",
+          "finishedAt": "2026-11-03T10:52:44.987Z"
+        },
+        {
+          "id": "T8",
+          "title": "QA: Emulator setup, users data model, security rules and rules tests",
+          "role": "qa-engineer",
+          "status": "Done",
+          "milestone": "M1",
+          "tokens": 38012,
+          "startedAt": "2026-11-03T10:52:45.130Z",
+          "finishedAt": "2026-11-03T10:55:23.392Z"
+        },
+        {
+          "id": "T9",
+          "title": "Security scan: Emulator setup, users data model, security rules and rules tests",
+          "role": "security-engineer",
+          "status": "Done",
+          "milestone": "M1",
+          "tokens": 29331,
+          "startedAt": "2026-11-03T10:52:45.292Z",
+          "finishedAt": "2026-11-03T10:55:23.568Z"
+        },
+        {
+          "id": "T10",
+          "title": "Functions: onUserCreate, reserveUsername, age block, deleteAccount, exportMyData",
+          "role": "backend-developer",
+          "status": "Done",
+          "milestone": "M1",
+          "tokens": 79054,
+          "startedAt": "2026-11-03T10:58:56.662Z",
+          "finishedAt": "2026-11-03T11:32:50.998Z"
+        },
+        {
+          "id": "T11",
+          "title": "Review: Functions: onUserCreate, reserveUsername, age block, deleteAccount, exportMyData",
+          "role": "tech-lead",
+          "status": "Done",
+          "milestone": "M1",
+          "tokens": 148670,
+          "startedAt": "2026-11-03T11:06:45.867Z",
+          "finishedAt": "2026-11-03T11:23:18.539Z"
+        },
+        {
+          "id": "T12",
+          "title": "QA: Functions: onUserCreate, reserveUsername, age block, deleteAccount, exportMyData",
+          "role": "qa-engineer",
+          "status": "Done",
+          "milestone": "M1",
+          "tokens": 57580,
+          "startedAt": "2026-11-03T11:24:03.630Z",
+          "finishedAt": "2026-11-03T11:32:51.160Z"
+        },
+        {
+          "id": "T13",
+          "title": "Security scan: Functions: onUserCreate, reserveUsername, age block, deleteAccount, exportMyData",
+          "role": "security-engineer",
+          "status": "Done",
+          "milestone": "M1",
+          "tokens": 71322,
+          "startedAt": "2026-11-03T11:24:03.772Z",
+          "finishedAt": "2026-11-03T11:32:51.285Z"
+        },
+        {
+          "id": "T14",
+          "title": "Sign-up, onboarding, profile, settings skeleton, account deletion UI on Android",
+          "role": "frontend-developer",
+          "status": "Done",
+          "milestone": "M1",
+          "tokens": 465867,
+          "startedAt": "2026-11-03T11:33:12.107Z",
+          "finishedAt": "2026-11-03T16:29:03.882Z"
+        },
+        {
+          "id": "T15",
+          "title": "Review: Sign-up, onboarding, profile, settings skeleton, account deletion UI on Android",
+          "role": "tech-lead",
+          "status": "Done",
+          "milestone": "M1",
+          "tokens": 242557,
+          "startedAt": "2026-11-03T12:09:45.962Z",
+          "finishedAt": "2026-11-03T16:01:15.997Z"
+        },
+        {
+          "id": "T16",
+          "title": "QA: Sign-up, onboarding, profile, settings skeleton, account deletion UI on Android",
+          "role": "qa-engineer",
+          "status": "Done",
+          "milestone": "M1",
+          "tokens": 48750,
+          "startedAt": "2026-11-03T16:01:16.721Z",
+          "finishedAt": "2026-11-03T16:13:11.514Z"
+        },
+        {
+          "id": "T17",
+          "title": "Security scan: Sign-up, onboarding, profile, settings skeleton, account deletion UI on Android",
+          "role": "security-engineer",
+          "status": "Done",
+          "milestone": "M1",
+          "tokens": 40713,
+          "startedAt": "2026-11-03T16:13:12.132Z",
+          "finishedAt": "2026-11-03T16:15:35.254Z"
+        },
+        {
+          "id": "T18",
+          "title": "Chat data model, group-ready schema, indexes and chat security rules",
+          "role": "database-engineer",
+          "status": "Done",
+          "milestone": "M2",
+          "tokens": 73339,
+          "startedAt": "2026-11-03T11:33:12.246Z",
+          "finishedAt": "2026-11-03T11:53:50.513Z"
+        },
+        {
+          "id": "T19",
+          "title": "Review: Chat data model, group-ready schema, indexes and chat security rules",
+          "role": "tech-lead",
+          "status": "Done",
+          "milestone": "M2",
+          "tokens": 73972,
+          "startedAt": "2026-11-03T11:37:16.927Z",
+          "finishedAt": "2026-11-03T11:42:47.846Z"
+        },
+        {
+          "id": "T20",
+          "title": "QA: Chat data model, group-ready schema, indexes and chat security rules",
+          "role": "qa-engineer",
+          "status": "Done",
+          "milestone": "M2",
+          "tokens": 71260,
+          "startedAt": "2026-11-03T11:43:31.557Z",
+          "finishedAt": "2026-11-03T11:53:50.366Z"
+        },
+        {
+          "id": "T21",
+          "title": "Security scan: Chat data model, group-ready schema, indexes and chat security rules",
+          "role": "security-engineer",
+          "status": "Done",
+          "milestone": "M2",
+          "tokens": 35353,
+          "startedAt": "2026-11-03T11:43:31.721Z",
+          "finishedAt": "2026-11-03T11:47:09.422Z"
+        },
+        {
+          "id": "T22",
+          "title": "Functions: onMessageCreate, lastMessage, unread counts; RTDB presence and typing rules",
+          "role": "backend-developer",
+          "status": "Done",
+          "milestone": "M2",
+          "tokens": 649103,
+          "startedAt": "2026-11-03T13:42:40.578Z",
+          "finishedAt": "2026-11-03T19:59:02.393Z"
+        },
+        {
+          "id": "T23",
+          "title": "Review: Functions: onMessageCreate, lastMessage, unread counts; RTDB presence and typing rules",
+          "role": "tech-lead",
+          "status": "Done",
+          "milestone": "M2",
+          "tokens": 210326,
+          "startedAt": "2026-11-03T16:09:38.464Z",
+          "finishedAt": "2026-11-03T17:04:20.863Z"
+        },
+        {
+          "id": "T24",
+          "title": "QA: Functions: onMessageCreate, lastMessage, unread counts; RTDB presence and typing rules",
+          "role": "qa-engineer",
+          "status": "Done",
+          "milestone": "M2",
+          "tokens": 152538,
+          "startedAt": "2026-11-03T17:04:21.148Z",
+          "finishedAt": "2026-11-03T19:59:02.235Z"
+        },
+        {
+          "id": "T25",
+          "title": "Security scan: Functions: onMessageCreate, lastMessage, unread counts; RTDB presence and typing rules",
+          "role": "security-engineer",
+          "status": "Done",
+          "milestone": "M2",
+          "tokens": 89716,
+          "startedAt": "2026-11-03T17:04:21.314Z",
+          "finishedAt": "2026-11-03T19:54:59.262Z"
+        },
+        {
+          "id": "T26",
+          "title": "Chat list and text conversation: ticks, receipts, typing, presence, offline queue, paging",
+          "role": "frontend-developer",
+          "status": "Done",
+          "milestone": "M2",
+          "tokens": 394405,
+          "startedAt": "2026-11-03T19:59:02.548Z",
+          "finishedAt": "2026-11-03T21:49:35.270Z"
+        },
+        {
+          "id": "T27",
+          "title": "Review: Chat list and text conversation: ticks, receipts, typing, presence, offline queue, paging",
+          "role": "tech-lead",
+          "status": "Done",
+          "milestone": "M2",
+          "tokens": 198367,
+          "startedAt": "2026-11-03T20:26:45.613Z",
+          "finishedAt": "2026-11-03T21:14:07.311Z"
+        },
+        {
+          "id": "T28",
+          "title": "QA: Chat list and text conversation: ticks, receipts, typing, presence, offline queue, paging",
+          "role": "qa-engineer",
+          "status": "Done",
+          "milestone": "M2",
+          "tokens": 61662,
+          "startedAt": "2026-11-03T21:14:07.563Z",
+          "finishedAt": "2026-11-03T21:41:54.179Z"
+        },
+        {
+          "id": "T29",
+          "title": "Security scan: Chat list and text conversation: ticks, receipts, typing, presence, offline queue, paging",
+          "role": "security-engineer",
+          "status": "Done",
+          "milestone": "M2",
+          "tokens": 33611,
+          "startedAt": "2026-11-03T21:16:51.737Z",
+          "finishedAt": "2026-11-03T21:41:54.335Z"
+        },
+        {
+          "id": "T30",
+          "title": "Business Analyst walkthrough of M0-M2 for readiness checkpoint",
+          "role": "business-analyst",
+          "status": "Done",
+          "milestone": "M2",
+          "tokens": 101637,
+          "startedAt": "2026-11-04T05:06:24.664Z",
+          "finishedAt": "2026-11-04T05:09:50.100Z"
+        },
+        {
+          "id": "T31",
+          "title": "Functions: acceptTerms callable and blocked-status check for onboarding",
+          "role": "backend-developer",
+          "status": "Done",
+          "milestone": "M1",
+          "tokens": 126156,
+          "startedAt": "2026-11-03T11:50:06.140Z",
+          "finishedAt": "2026-11-03T16:29:04.392Z"
+        },
+        {
+          "id": "T32",
+          "title": "Review: acceptTerms and onboarding state",
+          "role": "tech-lead",
+          "status": "Done",
+          "milestone": "M1",
+          "tokens": 57281,
+          "startedAt": "2026-11-03T11:58:47.912Z",
+          "finishedAt": "2026-11-03T16:01:15.633Z"
+        },
+        {
+          "id": "T33",
+          "title": "QA: acceptTerms and onboarding state",
+          "role": "qa-engineer",
+          "status": "Done",
+          "milestone": "M1",
+          "tokens": 0,
+          "startedAt": "2026-11-03T16:01:16.891Z",
+          "finishedAt": "2026-11-03T16:13:11.740Z"
+        },
+        {
+          "id": "T34",
+          "title": "Security scan: acceptTerms and onboarding state",
+          "role": "security-engineer",
+          "status": "Done",
+          "milestone": "M1",
+          "tokens": 0,
+          "startedAt": "2026-11-03T16:13:12.288Z",
+          "finishedAt": "2026-11-03T16:15:35.398Z"
+        },
+        {
+          "id": "T35",
+          "title": "CI: exclude functions from root tsconfig, install and typecheck functions, run test:functions",
+          "role": "deployment-engineer",
+          "status": "Done",
+          "milestone": "M1",
+          "tokens": 58972,
+          "startedAt": "2026-11-03T14:28:50.102Z",
+          "finishedAt": "2026-11-03T16:01:15.339Z"
+        },
+        {
+          "id": "T36",
+          "title": "Upgrade @react-native-firebase major version and re-test (audit highs)",
+          "role": "frontend-developer",
+          "status": "Backlog",
+          "milestone": "M2",
+          "tokens": 0,
+          "startedAt": null,
+          "finishedAt": null
+        },
+        {
+          "id": "T37",
+          "title": "Functions: read receipts per conversation with readReceipts privacy",
+          "role": "backend-developer",
+          "status": "Done",
+          "milestone": "M2",
+          "tokens": 250638,
+          "startedAt": "2026-11-03T20:00:37.049Z",
+          "finishedAt": "2026-11-03T21:00:27.169Z"
+        },
+        {
+          "id": "T38",
+          "title": "Review: read receipts",
+          "role": "tech-lead",
+          "status": "Done",
+          "milestone": "M2",
+          "tokens": 136064,
+          "startedAt": "2026-11-03T20:11:13.362Z",
+          "finishedAt": "2026-11-03T20:26:45.325Z"
+        },
+        {
+          "id": "T39",
+          "title": "QA: read receipts",
+          "role": "qa-engineer",
+          "status": "Done",
+          "milestone": "M2",
+          "tokens": 1089,
+          "startedAt": "2026-11-03T20:26:45.474Z",
+          "finishedAt": "2026-11-03T20:58:50.183Z"
+        },
+        {
+          "id": "T40",
+          "title": "Security scan: read receipts",
+          "role": "security-engineer",
+          "status": "Done",
+          "milestone": "M2",
+          "tokens": 34759,
+          "startedAt": "2026-11-03T20:58:50.321Z",
+          "finishedAt": "2026-11-03T21:00:27.029Z"
+        },
+        {
+          "id": "T41",
+          "title": "Functions: export own receipts, rate-limit receipt calls, harden off-toggle race",
+          "role": "backend-developer",
+          "status": "Done",
+          "milestone": "M2",
+          "tokens": 286296,
+          "startedAt": "2026-11-03T21:00:33.805Z",
+          "finishedAt": "2026-11-03T21:16:42.473Z"
+        },
+        {
+          "id": "T42",
+          "title": "M2 device QA on Pixel 8 Pro: install app, sign-up and two-account chat against emulators",
+          "role": "qa-engineer",
+          "status": "Backlog",
+          "milestone": "M2",
+          "tokens": 0,
+          "startedAt": "2026-11-04T05:06:24.588Z",
+          "finishedAt": null
+        },
+        {
+          "id": "T43",
+          "title": "Fix Android debug build on real devices: Kotlin 2.2 vs firebase-auth 25 metadata (no skip-check hack); emulator host configurable for a physical device (RNFirebase remaps localhost to 10.0.2.2); submitDob retries NOT_FOUND until onCreate finishes; add assembleDebug to CI",
+          "role": "frontend-developer",
+          "status": "Done",
+          "milestone": "M2",
+          "tokens": 431691,
+          "startedAt": "2026-11-04T06:01:31.628Z",
+          "finishedAt": "2026-11-04T07:34:31.362Z"
+        },
+        {
+          "id": "T44",
+          "title": "Review T43 build and device-host fix",
+          "role": "tech-lead",
+          "status": "Done",
+          "milestone": "M2",
+          "tokens": 171160,
+          "startedAt": "2026-11-04T07:02:19.290Z",
+          "finishedAt": "2026-11-04T07:34:31.450Z"
+        },
+        {
+          "id": "T45",
+          "title": "Security scan T43 (host config must not ship to production builds)",
+          "role": "security-engineer",
+          "status": "Done",
+          "milestone": "M2",
+          "tokens": 36067,
+          "startedAt": "2026-11-04T07:02:19.372Z",
+          "finishedAt": "2026-11-04T07:04:16.953Z"
+        },
+        {
+          "id": "T46",
+          "title": "Follow-ups from T44 review: emulators-reverse rejects non-numeric DB port; make chat-firebase host/port assertion unconditional",
+          "role": "frontend-developer",
+          "status": "Backlog",
+          "milestone": "M2",
+          "tokens": 0,
+          "startedAt": null,
+          "finishedAt": null
+        }
+      ],
+      "trace": [
+        {
+          "id": "R1",
+          "text": "[AUTH] Phone number + OTP is the only login; default +91, E.164 validation",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R2",
+          "text": "[AUTH] OTP: 6-digit, Android auto-read, resend after 30s, max 5 attempts then 1-hour cooldown",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": true
+        },
+        {
+          "id": "R3",
+          "text": "[AUTH] Date of birth gate: under-18 blocked, blocked phone hash stored to stop instant retry",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R4",
+          "text": "[AUTH] Basic profile: display name, unique @username (3-20 chars a-z 0-9 . _), optional photo, bio <=150",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R5",
+          "text": "[AUTH] Username uniqueness enforced server-side via transactional usernames/{username} claim (reserveUsername)",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R6",
+          "text": "[AUTH] Permission primer screens shown before OS prompts for contacts, notifications; camera/mic on first use; location only on entering Nearby",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R7",
+          "text": "[AUTH] Terms, Privacy Policy, Community Guidelines acceptance stored with timestamp and version",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R8",
+          "text": "[AUTH] Install to Chats tab in under 90 seconds for a new user; app opens on Chats",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": true
+        },
+        {
+          "id": "R9",
+          "text": "[AUTH] Reinstall with same phone restores account, chats and media",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R10",
+          "text": "[AUTH] In-app account deletion: soft-delete immediately, hard-delete all personal data within 30 days",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R11",
+          "text": "[AUTH] Data export (download my data) available in Settings",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R12",
+          "text": "[AUTH] Phone number change in Settings",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R13",
+          "text": "[CHAT] Four bottom tabs in order Chats | Reels | Nearby | Profile",
+          "code": 2,
+          "tests": 1,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R14",
+          "text": "[CHAT] Chat list: pinned (max 3) first, then by last message time; unread badge; muted icon; archived row; search bar; new-chat button; dating badge on match chats",
+          "code": 1,
+          "tests": 1,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R15",
+          "text": "[CHAT] New chat screen: Urbanzyra contacts, invite non-users via SMS/WhatsApp share of invite link, Scan QR, My QR",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R16",
+          "text": "[CHAT] Contact sync: client sends normalised E.164 over TLS to matchContacts; server peppered SHA-256 lookup in phoneIndex; raw numbers never stored; max once per 24h plus pull-to-refresh",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R17",
+          "text": "[CHAT] Invite/QR: https://urbanzyra.app/u/{username} deep link (App Links/Universal Links) plus QR; opening shows profile with Message",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": true
+        },
+        {
+          "id": "R18",
+          "text": "[CHAT] Message requests: non-contact non-match users can reach you only via QR/link, creating a request to accept or decline",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R19",
+          "text": "[CHAT] Match creates conversation with origin=match automatically",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R20",
+          "text": "[CHAT] Text messages up to 4,096 chars with server-generated link previews; single emoji renders large",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R21",
+          "text": "[CHAT] Stickers: built-in packs (admin-managed) and user-made (crop square, optional bg removal, caption, 512x512 WebP, <=500KB, limit 120); received stickers can be saved",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R22",
+          "text": "[CHAT] GIFs via GIPHY: search and trending; store GIPHY ID + MP4 URL only",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R23",
+          "text": "[CHAT] Photos: up to 30 per send, compressed to max 2048px, HD toggle",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R24",
+          "text": "[CHAT] Video messages <=3 min and <=100MB, client-compressed to 720p, thumbnail generated, not transcoded",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R25",
+          "text": "[CHAT] Voice notes <=15 min AAC/M4A: hold-to-record, slide-cancel, lock, waveform, speed 1x/1.5x/2x",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": true
+        },
+        {
+          "id": "R26",
+          "text": "[CHAT] Documents <=100MB any type with filename, size, icon; location static pin (current or map-picked, no live location); contact card with Message/Save actions",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R27",
+          "text": "[CHAT] Resumable media uploads to chat/{conversationId}/{messageId}/ with progress, retry, cancel",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R28",
+          "text": "[CHAT] Message states sending -> sent -> delivered -> read persist across app kill/restart",
+          "code": 1,
+          "tests": 1,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R29",
+          "text": "[CHAT] Read receipts on by default; turning off also hides others' receipts from you",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R30",
+          "text": "[CHAT] Typing indicator via RTDB, expires after 5s; online/last seen via RTDB presence with privacy Everyone/Contacts/Nobody",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R31",
+          "text": "[CHAT] Reply (swipe), reactions (6 quick + picker, one per user per message), star, forward (<=5 chats, Forwarded label, many-times label after 5 hops)",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R32",
+          "text": "[CHAT] Delete for me anytime; delete for everyone within 48h shows 'This message was deleted'; enforced server-side",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R33",
+          "text": "[CHAT] Edit text-only within 15 minutes with 'edited' label, enforced server-side",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R34",
+          "text": "[CHAT] Disappearing messages Off/24h/7d/90d per chat via Firestore TTL on expireAt; media removed by cleanup function",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R35",
+          "text": "[CHAT] Pin (max 3), archive (stays archived on new messages setting), mute 8h/1w/always",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R36",
+          "text": "[CHAT] Message search: on-device SQLite FTS plus paged history load from Firestore; Starred list",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R37",
+          "text": "[CHAT] Media auto-download settings per type for Wi-Fi/mobile data",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R38",
+          "text": "[CHAT] Sync/offline: Firestore persistence + SQLite cache; offline composed messages queue and send on reconnect; messages paged 50",
+          "code": 1,
+          "tests": 1,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R39",
+          "text": "[CHAT] Chat history and media retained until user deletes or account deleted",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R40",
+          "text": "[CHAT] Message delivered to online peer within 1 second on 4G",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": true
+        },
+        {
+          "id": "R41",
+          "text": "[CHAT] Data model supports type=group with up to 256 members though groups not exposed at launch",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R42",
+          "text": "[CALL] Stream token issued by getStreamToken after Firebase Auth check; Stream user id = Firebase uid",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R43",
+          "text": "[CALL] 1-to-1 voice call with mute, speaker, Bluetooth routing, minimise to bubble/PiP",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R44",
+          "text": "[CALL] 1-to-1 video call: camera on/off, flip, Android PiP, iOS background audio, voice->video upgrade request accepted by peer",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R45",
+          "text": "[CALL] Screen share: Android MediaProjection; iOS Broadcast Upload Extension with App Group",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": true
+        },
+        {
+          "id": "R46",
+          "text": "[CALL] Call log segment in Chats: incoming/outgoing/missed with call back; missed call push and entry in chat thread",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R47",
+          "text": "[CALL] Busy handling: second incoming call shows busy to caller; ring timeout 45s -> missed",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R48",
+          "text": "[CALL] Video default SD 480p, HD only on Wi-Fi; network quality indicator with auto-downgrade",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R49",
+          "text": "[CALL] Native incoming call UI with app killed: iOS CallKit+PushKit on locked iPhone; Android full-screen on 13+",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": true
+        },
+        {
+          "id": "R50",
+          "text": "[CALL] Call connects <3s on 4G; audio continues in background",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": true
+        },
+        {
+          "id": "R51",
+          "text": "[CALL] Call permissions: contacts and accepted QR connections can call; matches can call immediately with one-time safety tip and in-call Report; block ends calls instantly; Settings who-can-call honoured",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R52",
+          "text": "[REEL] Reels/Dramas sub-tab control remembering last selection",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R53",
+          "text": "[REEL] Reel feed: full-screen swipe, autoplay with remembered mute, loop, double-tap like, long-press pause, tap mute toggle",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R54",
+          "text": "[REEL] Reel overlay and rail: creator, Follow, expandable caption, tappable hashtags, Like/Comment/Share/Save/Tip/More (report, not interested, copy link)",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R55",
+          "text": "[REEL] rankReels scheduled every 5 min writes feedCandidates with spec score (0.35 followed, 0.30 engagement, 0.20 completion, 0.15 freshness); excludes seen, not-interested, reported, blocked; weights from Remote Config",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R56",
+          "text": "[REEL] Feed client fetches 20 candidates, preloads next 2, records seen in batches; next reel starts <300ms on mid-range Android on 4G",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": true
+        },
+        {
+          "id": "R57",
+          "text": "[REEL] Native AdMob ad every 7th reel (Remote Config) for non-VIP only; none in chats/calls/dramas/Nearby; UMP consent and iOS ATT",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": true
+        },
+        {
+          "id": "R58",
+          "text": "[REEL] Reel upload: record up to 60s (front/back, flash, timer) or gallery with forced trim to <=60s; caption <=2,200, hashtags, cover frame, comment setting; background upload with progress",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R59",
+          "text": "[REEL] Reel goes live only after transcoding and AI moderation approve",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R60",
+          "text": "[REEL] Comments: one-level threading, like, creator pins one and deletes any, report; comment setting Everyone/Followers/Off honoured",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R61",
+          "text": "[REEL] Follow/unfollow, creator profile (counts, grid, Follow, Message only if mutual follow or contact, Tip), Saved collection, share reel card to chat",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R62",
+          "text": "[REEL] Search users, hashtags, reels by caption via Typesense; hashtag page top + recent",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R63",
+          "text": "[VIDEO] Raw upload validated (reel <=60s, episode <=180s, size) by onRawVideoUploaded; Video Intelligence scan and Transcoder job started",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R64",
+          "text": "[VIDEO] HLS renditions: reels 360/540/720; dramas 360/540/720/1080; H.264+AAC 2s segments; chat video not transcoded",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R65",
+          "text": "[VIDEO] onTranscodeDone marks ready, writes HLS URL, poster/sprite; raw file deleted after 7 days",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R66",
+          "text": "[VIDEO] Delivery via Cloud CDN on custom domain; reels public cacheable; drama HLS only via signed cookies scoped per episode path",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R67",
+          "text": "[DRAMA] Dramas home rows: Continue watching, New episodes, Trending, Genres, Free to start, catalogue; series card with 9:16 poster, VIP badge",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R68",
+          "text": "[DRAMA] Series page: synopsis, studio, seasons selector, episode list states watched/up next/locked-previous/locked-VIP",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R69",
+          "text": "[DRAMA] Player: swipe up next (only if unlocked), swipe down previous, episode sheet, autoplay next or paywall/watch-previous message; like, share, follow series",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R70",
+          "text": "[DRAMA] R1: first open of unplayed series always starts S1E1",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R71",
+          "text": "[DRAMA] R2: episode k playable only if k-1 of same season completed (E1 always eligible)",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R72",
+          "text": "[DRAMA] R3: completed = merged real-played intervals >=90% of duration; client heartbeat every 10s and on pause/exit/end",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R73",
+          "text": "[DRAMA] R3 anti-cheat: server validates intervals within [0,duration] and new watched seconds <= wall-clock x 2.1; completedAt set once",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R74",
+          "text": "[DRAMA] R4: seeking allowed in unlocked episodes but skipped ranges do not count; seek-to-end does not unlock next",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R75",
+          "text": "[DRAMA] R5: reopening in-progress series plays first non-completed episode from 0:00 keeping prior intervals",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R76",
+          "text": "[DRAMA] R6: Season 1 episodes 1..N free (N per series, default from Remote Config, 8); beyond N need VIP",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R77",
+          "text": "[DRAMA] R7: Season s>1 E1 requires all of season s-1 completed AND VIP",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R78",
+          "text": "[DRAMA] R8: getEpisodePlayback checks R2/R6/R7 and VIP from mirrored entitlement; returns 4-hour signed cookie/URL or reason code with no URL",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R79",
+          "text": "[DRAMA] R9: VIP expiry keeps history but re-locks VIP-gated episodes; R10: rewatching completed episodes allowed (VIP-gated still need VIP)",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R80",
+          "text": "[DRAMA] R11: new episodes inherit rules and push to series followers via onEpisodePublished",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R81",
+          "text": "[DRAMA] Studio content rules: <=3 min vertical 9:16 episodes, optional SRT/VTT, poster; only approved studio role uploads; AI moderation plus admin approval before publish",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R82",
+          "text": "[DATE] Nearby first entry: explainer, foreground location permission, dating profile creation; profile invisible until complete and switched on",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R83",
+          "text": "[DATE] Dating profile fields: first name, age from DOB (not editable), gender, interested in, intents, 3-6 photos (face in first, drag reorder), exactly 3 prompts <=150 chars, optional video/voice prompt <=30s, optional basics, per-field visibility",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R84",
+          "text": "[DATE] Discover: one profile at a time, interleaved photos/prompts, Like per item with optional comment <=140, Skip hides 30 days, rounded distance, report/block menu, empty state",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R85",
+          "text": "[DATE] getDiscoveryBatch returns 20 profiles via geohash cells with two-way filter, block, seen, visibility, hide-from-contacts, incognito rules; ordered by recency, completeness, distance",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R86",
+          "text": "[DATE] Likes You: free sees most recent clearly, rest blurred; VIP sees all; like back = match, or Remove",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R87",
+          "text": "[DATE] Mutual like = match with celebration screen and conversation; unmatch removes conversation from both sides and prevents re-discovery",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R88",
+          "text": "[DATE] Free 10 likes/day resets 00:00 IST, VIP unlimited; 11th like rejected server-side with VIP upsell; advanced filters (religion, language, height, education) VIP only",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R89",
+          "text": "[DATE] No API response ever contains another user's latitude/longitude or geohash",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R90",
+          "text": "[DATE] Location: foreground only; update on Nearby open and every 10 min if moved >500m; exact coords in server-only privateLocation; stale after 7 days drops from discovery",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R91",
+          "text": "[DATE] Distance shown rounded up to whole km (min 1 km) plus +/-0.5 km jitter fixed per pair per day",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R92",
+          "text": "[DATE] Master visibility off removes from discovery immediately and deletes location doc; hide-from-contacts excludes contacts both ways; incognito (VIP) visible only to those you liked",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R93",
+          "text": "[DATE] Radius 1-100 km and basic filters (age, distance, gender, intent)",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R94",
+          "text": "[MONEY] VIP products VIP Monthly/Yearly (auto-renew), coin packs via RevenueCat; store billing only for digital goods",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": true
+        },
+        {
+          "id": "R95",
+          "text": "[MONEY] revenueCatWebhook is sole writer of users.vip and coin purchases; client cannot write VIP/coins",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": true
+        },
+        {
+          "id": "R96",
+          "text": "[MONEY] VIP removes reel ads, unlocks gated dramas, unlimited likes, all likes, advanced filters, incognito; one subscription covers all",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": true
+        },
+        {
+          "id": "R97",
+          "text": "[MONEY] Coins usable only to tip reel creators; tips 10/50/100/500 or custom; animation and notification to creator",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": true
+        },
+        {
+          "id": "R98",
+          "text": "[MONEY] Double-entry coinLedger written only by Functions in transactions; balance never edited directly; amounts in integer paise",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R99",
+          "text": "[MONEY] Creator payouts: fixed rate after fees, creator 50% net (assumption), min Rs 1,000, KYC (PAN, bank/UPI), monthly via provider; non-creators cannot cash out",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": true
+        },
+        {
+          "id": "R100",
+          "text": "[MONEY] computeStudioPayouts monthly: dramaPool = netVipRevenue x pool%; studio share by validated VIP watch-minutes; admin approval before payout; studio statements",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": true
+        },
+        {
+          "id": "R101",
+          "text": "[MONEY] Watch-minutes aggregated daily from validated progress data only",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R102",
+          "text": "[SAFE] AI moderation: SafeSearch on profile/dating photos and stickers, face in first dating photo, Video Intelligence on reels/episodes; rejections notify user and enter human review (appeal); thresholds in Remote Config",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R103",
+          "text": "[SAFE] Text moderation: profanity (English + Hinglish) + toxicity; comments hidden pending review, bios/prompts rejected; chat images scanned only when reported",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R104",
+          "text": "[SAFE] checkMessageSafety warns 'Send anyway?' on flagged messages and increments abuse score (scope per open question Q1)",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R105",
+          "text": "[SAFE] Block and report available in chat, call, profile, reel, comment, dating profile, match; reasons per spec; chat reports attach last 20 messages with user notice; underage/self-harm prioritised",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R106",
+          "text": "[SAFE] Blocking stops messages, calls, profile visibility and Nearby visibility immediately",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R107",
+          "text": "[SAFE] Enforcement ladder warning -> removal -> 24h restriction -> 7d suspension -> permanent ban (phone hash + device ID); admin may skip steps",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R108",
+          "text": "[SAFE] Safety centre: up to 5 trusted contacts, share date details to trusted contacts, SOS dials 112 and sends one-time location plus match details, safety tips",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": true
+        },
+        {
+          "id": "R109",
+          "text": "[NOTIF] FCM push by category per table with per-category toggles and Android channels; calls not disableable; reel social batched max 1 per 15 min per type; badge = unread chats",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": true
+        },
+        {
+          "id": "R110",
+          "text": "[ADMIN] Admin web (Next.js) with custom-claim roles superadmin/moderator/finance/studio; non-role users denied",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R111",
+          "text": "[ADMIN] Moderation queue, users search/ban, enforcement history, immutable audit log of every admin action",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R112",
+          "text": "[ADMIN] Studio portal: series/seasons/episodes CRUD, bulk upload, reorder, free count N, schedule release, status, analytics, payout statements; studio account approval",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R113",
+          "text": "[ADMIN] Admin sticker packs, featured dramas/genres, dating prompt library, Remote Config editor with audit log",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R114",
+          "text": "[ADMIN] Admin analytics (DAU/MAU, retention, funnel S1E1->E2->paywall->VIP) and revenue views; push campaigns with segment targeting, scheduling, delivery stats",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R115",
+          "text": "[COMP] In-app Grievance form and named Grievance Officer visible in app; tickets acknowledged within 24h, resolved within 15 days with SLA timers",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": true
+        },
+        {
+          "id": "R116",
+          "text": "[COMP] NCII removal within 24h of report; reports actionable within 24h (Apple UGC)",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R117",
+          "text": "[COMP] DPDP: consent notices for contacts, location, photos; purpose limitation; retention policy; breach handling process",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R118",
+          "text": "[COMP] Store compliance: App Privacy label and Play Data safety, prominent disclosure before contacts/location, system photo picker, 18+ ratings, full-screen intent and FGS declarations, privacy manifest, ATT",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": true
+        },
+        {
+          "id": "R119",
+          "text": "[COMP] Light/dark/system theme with manual override; English only with all strings in en.json",
+          "code": 2,
+          "tests": 2,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R120",
+          "text": "[SEC] Firestore/Storage/RTDB default deny; Functions-only fields (vip, coinBalance, status, counters, privateLocation, phoneIndex, likes, dailyLimits, coinLedger, dramaProgress); all callables require Auth + App Check; admin callables check claims",
+          "code": 0,
+          "tests": 1,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R121",
+          "text": "[SEC] Critical automated tests exist: unlock rules R1-R10 incl. seek cheat, like limits, block enforcement, delete window, VIP expiry; CI runs lint, typecheck, Jest, rules tests",
+          "code": 0,
+          "tests": 1,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R122",
+          "text": "[OPS] Analytics events instrumented, Crashlytics enabled, budget alerts 50/80/100%, monitoring alerts, cost per MAU tracked weekly",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R123",
+          "text": "[OPS] Three environments dev/staging/prod; EAS profiles; OTA via EAS Update; Functions staged to prod manually",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": false
+        },
+        {
+          "id": "R124",
+          "text": "[DOD] v1.0 DoD: crash-free sessions >=99.5% in closed beta; all section 6-11 acceptance criteria pass on real iPhone and mid-range Android; approved on both stores",
+          "code": 0,
+          "tests": 0,
+          "deployed": false,
+          "verified": false,
+          "unverifiable": true
+        }
+      ],
+      "decisions": [
+        {
+          "at": "2026-11-04T07:34:31.681Z",
+          "text": "PR #55 approved at f28ca92 (T44), security pass (T45). CI debug APK verified (app.urbanzyra.mobile.dev, arm64, debug-signed), expires 2026-11-06. T42 retest waits for the founder to reconnect the Pixel.",
+          "assumption": false
+        },
+        {
+          "at": "2026-11-04T07:05:32.348Z",
+          "text": "T44 review: changes requested on PR #55. QA install route = debug APK from CI artifact (2-day retention, free tier), not local Windows build.",
+          "assumption": false
+        },
+        {
+          "at": "2026-11-04T07:04:17.037Z",
+          "text": "T45 security pass on PR #55 (2 low, 2 info). Existing grpc/firestore audit highs predate it and stay with T36 (Firebase major upgrade, founder decision at checkpoint).",
+          "assumption": false
+        },
+        {
+          "at": "2026-11-04T06:01:24.441Z",
+          "text": "T42 device QA incomplete: launch, coral design and invalid-phone check pass on the Pixel 8 Pro. Blocked by: debug APK fails to compile (Kotlin metadata), emulator host hard-coded to 10.0.2.2 so OTP fails from a real phone, and the phone disconnected. Image send is M3 scope (plan), not an M2 gap; my ",
+          "assumption": false
+        },
+        {
+          "at": "2026-11-04T05:09:50.177Z",
+          "text": "T30 BA walkthrough done (evidence/T30/walkthrough.md). Gaps for checkpoint: PRs #32-#39 unmerged; no in-app way to start a new chat (New chat picker deferred to M4, so M2 chat runs on seeded conversations); data export not downloadable in-app (R11); R12 phone change absent. Device items await T42.",
+          "assumption": false
+        },
+        {
+          "at": "2026-11-04T05:06:08.341Z",
+          "text": "Founder extended time window +10h (2026-11-04) for M2 checkpoint and possible T36. Founder rule for Pixel 41130DLJG00135: install the Urbanzyra app and test it only; no other action on the phone (no settings changes, no other apps, no file access outside the app, no uninstalling other apps).",
+          "assumption": false
+        },
+        {
+          "at": "2026-11-03T21:41:54.496Z",
+          "text": "PO: wipe the local chat cache on sign-out and account deletion; debounce markRead; batch markDelivered. Open founder decision for the checkpoint: encrypt the on-device chat cache.",
+          "assumption": false
+        },
+        {
+          "at": "2026-11-03T21:16:42.635Z",
+          "text": "Client must batch markRead by upToMessageId to stay under 120 per minute in busy groups; QA T28 to check.",
+          "assumption": false
+        },
+        {
+          "at": "2026-11-03T21:14:07.447Z",
+          "text": "Accepted for M2: a deleted failed message may briefly reach the recipient before removal if a slow attempt lands. M4 follow-up: hide Delete on a failed bubble while an attempt is in flight.",
+          "assumption": true
+        },
+        {
+          "at": "2026-11-03T21:13:02.445Z",
+          "text": "Chat UI fixes at b3f442e: transactional send, start-dispose guard, CI hang fixed. Non-blocking follow-ups for M4: time to failed, markDelivered on each launch, readReceipts listener re-subscribe, SQLite close on account switch.",
+          "assumption": false
+        },
+        {
+          "at": "2026-11-03T21:00:27.320Z",
+          "text": "Receipts are behavioural personal data: exportMyData must include the user's own receipts; per-user rate limit on markDelivered and markRead; off-toggle race hardening. Small follow-up task before checkpoint.",
+          "assumption": false
+        },
+        {
+          "at": "2026-11-03T20:26:31.841Z",
+          "text": "PO: deferred to M4 (chat extras): row swipe gestures (long-press covers them), drafts in list, unread divider and new-messages pill, mark-as-unread (needs a rules change), New chat picker (needs contact sync). Unread tab badge accepted. Merge order adds #38 before #39.",
+          "assumption": true
+        },
+        {
+          "at": "2026-11-03T20:26:15.339Z",
+          "text": "T26: receipts wired to the T37 contract (receipts and readReceipts docs, markDelivered/markRead by message id), not the PO's per-ms description. Typing value is a server timestamp that the receiver expires after 5 s of local time. Chat list previews use the newest local message so queued and failed ",
+          "assumption": true
+        },
+        {
+          "at": "2026-11-03T20:16:32.905Z",
+          "text": "Contract 4.3 amended: markRead advances delivered only while the caller's read receipts are on; own row forward-only; unreadCount reset guarded by lastMessageAt in-transaction; member removal deletes receipt docs.",
+          "assumption": false
+        },
+        {
+          "at": "2026-11-03T20:00:23.658Z",
+          "text": "PO for chat UI: (1) receipts maintained by Functions per conversation and readable by members, with R29 reciprocal readReceipts applied server-side; (2) the client writes its own presence and typing to RTDB with onDisconnect; @react-native-firebase/database was approved in the M0-M2 list; (3) peer d",
+          "assumption": false
+        },
+        {
+          "at": "2026-11-03T19:42:02.872Z",
+          "text": "Purge anonymises deleted users' messages and files. Accepted for now: direct conversation ids still contain the deleted uid (pseudonymous), for lawyer review. Purge must grow with messageRequests and matches. Enable Firestore TTL on rateLimits.expireAt at deploy.",
+          "assumption": true
+        },
+        {
+          "at": "2026-11-03T19:23:16.894Z",
+          "text": "User: major Firebase library upgrade (grpc audit highs) done as a planned task at the M2 checkpoint.",
+          "assumption": false
+        },
+        {
+          "at": "2026-11-03T19:23:16.717Z",
+          "text": "User: when an account is deleted, messages and files they sent stay for others, fully anonymised as 'Deleted user'; their uid is removed from member lists and records. Lawyer to confirm under DPDP.",
+          "assumption": false
+        },
+        {
+          "at": "2026-11-03T16:29:04.841Z",
+          "text": "Merge order: #32, #33, #34, #36, #35, then #37 (after it merges task/t14, which holds the username fix in functions).",
+          "assumption": false
+        },
+        {
+          "at": "2026-11-03T16:15:35.794Z",
+          "text": "Security passed #35 and #36 with medium fixes being made: mic permission off, permissions declared, username dot rules, client App Check. Accepted for now: transitive @grpc/grpc-js audit highs in Firebase packages (not exploitable as used); recheck at each security scan.",
+          "assumption": true
+        },
+        {
+          "at": "2026-11-03T16:13:11.969Z",
+          "text": "QA passed sign-up (#35, #36) on automated tests. Follow-up: username dots (leading, trailing, double) must be rejected in client and server. Device test of sign-up still owed.",
+          "assumption": false
+        },
+        {
+          "at": "2026-11-03T16:09:29.709Z",
+          "text": "PR #37 chat Functions: presence and avatars served through privacy-aware callables with short-lived signed URLs; production needs a Token Creator IAM role at deploy. task/t22 must merge task/t18 and task/t31 before merge, and drop users.photoUrl per photoPath contract.",
+          "assumption": false
+        },
+        {
+          "at": "2026-11-03T16:08:48.874Z",
+          "text": "T22: a contact means a mutual contacts/{uid}/matches entry, an accepted messageRequests/{from_to}, or an active matches/{pair}; those collections are written by later tasks. Groups over 32 members skip per-member unread counters; clients derive unread from lastReadAt. Avatars and presence are served",
+          "assumption": true
+        },
+        {
+          "at": "2026-11-03T15:46:07.611Z",
+          "text": "Hit the 5-hour limit around 15:20Z with 2 agents running; resumed at 15:45Z after reset. Usage data is still unavailable in VS Code, so pacing stays at 2 agents with smaller tasks.",
+          "assumption": false
+        },
+        {
+          "at": "2026-11-03T13:42:30.101Z",
+          "text": "PO error: reported Ben as working when the agent had finished without a report; team was idle. PO now checks ListAgents and commits before reporting status.",
+          "assumption": false
+        },
+        {
+          "at": "2026-11-03T12:12:57.186Z",
+          "text": "Avatar contract: store the Storage path as users.photoPath (only '' or avatars/{uid}/avatar.jpg|png|webp, enforced by rules), never a download URL; extends change 8. Clients resolve the path at render time until T22 adds privacy-aware delivery. Architecture 4.3 updated.",
+          "assumption": false
+        },
+        {
+          "at": "2026-11-03T12:09:32.322Z",
+          "text": "PR #35 stores the avatar download URL on the user doc; accepted change 8 says use paths with rules-checked access rather than permanent URLs. Reviewer to decide. Storage upload tested only with mocks; JDK 21 must be on PATH (it's in the repo .tmp).",
+          "assumption": true
+        },
+        {
+          "at": "2026-11-03T12:06:48.740Z",
+          "text": "User approved A2: @react-native-firebase/storage.",
+          "assumption": false
+        },
+        {
+          "at": "2026-11-03T11:58:47.152Z",
+          "text": "T31 contracts: acceptTerms and getOnboardingState (states new, needsDob, blocked, needsProfile, needsTerms, complete; profile before terms). Demo google-services.json for demo-urbanzyra committed; device use unverified.",
+          "assumption": false
+        },
+        {
+          "at": "2026-11-03T11:53:50.632Z",
+          "text": "Chat rules done (PR #34). Open risk: in the emulator, first uploads after a cold start were denied (QA calls it an emulator warm-up). Must be checked on real Firebase Storage at first real-project test.",
+          "assumption": true
+        }
+      ]
+    },
+    {
+      "id": "company-team-setup",
+      "name": "Company team setup",
+      "private": true,
+      "completion": {
+        "done": 9,
+        "total": 12
+      },
+      "milestones": [
+        {
+          "id": "M1",
+          "done": 8,
+          "total": 10
+        },
+        {
+          "id": "M2",
+          "done": 1,
+          "total": 1
+        },
+        {
+          "id": "M3",
+          "done": 0,
+          "total": 1
+        }
+      ]
+    },
+    {
+      "id": "fundraising",
+      "name": "Fundraising",
+      "private": true,
+      "completion": {
+        "done": 9,
+        "total": 9
+      },
+      "milestones": [
+        {
+          "id": "M1",
+          "done": 9,
+          "total": 9
+        }
+      ]
+    }
+  ]
+}
